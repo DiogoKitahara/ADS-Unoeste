@@ -1,0 +1,26 @@
+Conceitos básicos da IHC
+    - No início da história dos computadores, os usuários precisavam ter um profundo conhecimento técnico para operá-los devido à complexidade dos sistemas. Isso dificultava o uso por pessoas que apenas queriam realizar tarefas simples, como usar uma calculadora, uma planilha ou um editor de texto.
+    - Na década de 70, com a popularização dos computadores pessoais, surgiu a necessidade de tornar os sistemas mais acessíveis aos usuários finais. Assim, na década de 80, a Interação Humano-Computador (IHC) foi desenvolvida como uma disciplina para facilitar o uso de sistemas por pessoas sem conhecimento técnico avançado.
+    - A interface de usuário é a parte do sistema com a qual as pessoas interagem, seja fisicamente, perceptivamente ou conceitualmente. A IHC se concentra na relação entre o sistema e o usuário, e ao longo das décadas tem avançado para criar sistemas de fácil utilização e apreço pelos usuários finais.
+    - A IHC divide o estudo em três entidades: o humano, o computacional e a interação entre eles, visando compreender suas características e valores de forma separada. Isso permitiu a evolução dos sistemas de computação, tornando-os mais acessíveis e amigáveis para todos.
+
+Humano
+    - Os inputs e outputs ocasianodos pela ação humana ao se relacionar com um sistema. Ou seja, a entrada e saída de informações, por meio de monitores, impressoras, para interpretação e tomada de decisão.
+
+Computacional
+    - Atividade por trás dos sistemas não são importantes para o usuário final, uma interface rápida e amigável são pertinentes para uma melhor compreensão do usuário.
+
+Interação
+    - É o ambiente comum entre os dois conjuntos (humano e computacional). E este contato entre essas duas entidades pode ocorrer em duas frentes distintas
+    - Contato físico: a informação ou ação é transmitida por meio de um dispositivo de hardware para o sistema. Por exemplo, mouse, teclado, scanners de código de barra, etc
+    - Contato conceitual: a interpretação do usuário com as informações apresentadas pelo contato e interação com o sistema operacional, permitindo avaliação e conclusões das respostas
+    - As entidades usuário e computador alternam entre si, o de quem fala e o de quem escuta. Exemplificado na imagem Usuario_e_sistema.png
+    - Exemplos: usuário clica em um botão, sistema exibe um relatório. Usuário abri um relatório, o sistema avisa sobre uma inconsistência
+
+Identificando as áreas relacionadas à IHC
+    - Com o passar dos anos e a necessidade de aprimoramento dos sistemas aumentando, foram envolvidos cada vez mais áreas para este setor como a psicologia, sociologia, antropologia, design gráfico, ergonomia e etc
+
+IHC e seus benefícios
+    - Na maioria dos jogos 2D no qual um pensonagem tem que ir de um ponto para outro, o fluxo de andamento é da esquerda para a direita, isto tem uma motivo fundado em um conjunto de ensinamentos que diversas ciências não exatas trouxeram junto das ciências exatas. Um dos ensinamentos é que o ser humano tem como avanço o lado direito e o retrocesso o lado esquerdo
+    - Outro exemplo disto é que o botão de continuar, finalizar e/ou concluir sempre estarão do lado direito da tela ao instalar um programa ou contratar um serviço on-line entre outros
+    - Seus benefícios são diversos, consumidores felizes e compreendidos, com acesso facilitado ao seu objetivo tendem a comprar mais, usar mais o sistema ou interagir mais com o software que é apresentado

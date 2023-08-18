@@ -7,8 +7,8 @@ int main(void) {
     scanf("%f", &aresta);
     // Calcular area
     float area = aresta * aresta;
-    // Calcular perímetro
+    // Calcular perÃ­metro
     float perimetro = aresta * 4;
-    // Printar o valor da área e perímetro
-    printf("Área: %.2f\nPerímetro: %.2f",area, perimetro);
+    // Printar o valor da Ã¡rea e perÃ­metro
+    printf("Ãrea: %.2f\nPerÃ­metro: %.2f",area, perimetro);
 }

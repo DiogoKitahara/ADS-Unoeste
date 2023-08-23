@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int main(void) {
+main(void) {
     // Pegar o valor de T
     float t, x, y, w;
     printf("T = ");
@@ -10,5 +10,5 @@ int main(void) {
     y = t / 2 + 4;
     w = 2 * t + 4 * y - 3 * x;
     // Printar o valor de W
-    printf("W = %f", w);
+    printf("W = %.2f\n", w);
 }

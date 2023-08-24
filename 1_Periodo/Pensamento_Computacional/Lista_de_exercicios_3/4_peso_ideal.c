@@ -11,7 +11,7 @@ main() {
     scanf("%i", &sexo);
     // Se sexo == 0
     if (sexo == 0) {
-        // Calcular peso ideal masculino
+        // Calcular peso ideal feminino
         peso =  62.1 * altura - 44.7;
     }
     // Senão

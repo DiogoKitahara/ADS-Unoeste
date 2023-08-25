@@ -36,7 +36,7 @@ main()
     }
     // Se primeiro ímpar e segundo par, divisão
     if (resto1 == 1 && resto2 == 0) {
-        operacao = numero1 / numero2;
+        operacao = (float) numero1 / numero2;
         printf("Primeiro numero = IMPAR\n");
         printf("Segundo numero = PAR\n");
         printf("%i / %i = %.2f\n", numero1, numero2, operacao);

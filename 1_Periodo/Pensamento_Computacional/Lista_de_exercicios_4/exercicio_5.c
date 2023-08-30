@@ -2,8 +2,9 @@
 
 main() {
     // Declarar variaveis
+    int idade, ano_contratacao, matricula;
     // Armazenar idade, sexo, salario base, ano contratação e matricula
-    // Se idade >= 18
+    // Se idade >= 18 && <= 39
         // Se M, 10% de reajuste
         // Se F, 8% de reajuste
     // Senão se idade >= 40

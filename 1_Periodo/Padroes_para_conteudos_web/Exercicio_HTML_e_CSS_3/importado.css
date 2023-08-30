@@ -1,0 +1,22 @@
+u {
+    font-weight: bold;
+    color: orange;
+}
+
+h1 {
+    text-shadow: 3px 3px 3px greenyellow;
+    color:blueviolet;
+}
+
+h3{
+    color: green;
+}
+
+div {
+    margin-left: 2cm;
+}
+body {
+    margin-right: 500px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}

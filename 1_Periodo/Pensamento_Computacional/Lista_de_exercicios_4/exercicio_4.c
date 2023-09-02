@@ -26,5 +26,5 @@ main() {
     // Calcular 5% por dependente
     dependente_adicionado = 0.05 * dependente * salario_base;
     salario_final = salario_base + idade_adicionado + ano_contratacao_adicionado + dependente_adicionado;
-    printf("Salario final: %.2f", salario_final);
+    printf("Salario final: %.2f\n", salario_final);
 }

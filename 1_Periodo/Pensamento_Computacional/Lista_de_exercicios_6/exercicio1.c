@@ -3,9 +3,10 @@
 main() {
 	// Declarar variaveis
 	int par, maior_par = 0, dia = 1, maior_dia = 0;
-	// Loop que repete 31 vezes (quantidade dos dias de Março)
-	while (dia <= 5) {
+	// Loop que repete 31 vezes (quantidade de dias de Março)
+	while (dia <= 31) {
 		// Armazenar par
+		printf("Dia %d\n", dia);
 		printf("Par: ");
 		scanf("%d", &par);
 		// Se par > maior par, armazenar dia e quantidade

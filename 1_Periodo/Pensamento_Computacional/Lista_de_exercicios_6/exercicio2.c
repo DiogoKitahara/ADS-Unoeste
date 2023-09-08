@@ -6,33 +6,36 @@ main() {
 	int refeicoes, cont_total = 0, cont_menos_10 = 0, cont_entre_10_20 = 0, cont_mais_20 = 0;
 	char pessoas;
 	// Armazenar a resposta
-	printf("Possui mais alunos(S / N) ");
+	printf("Realizar pesquisa [S = sim / N = nao]: ");
 	scanf("%c", &pessoas);
 	pessoas = toupper(pessoas);
-	// Loop até char != 'N'
+	// Loop atï¿½ char != 'S'
 	while (pessoas == 'S'){
 		// Perguntar refeicao
 		printf("Refeicoes no mes: ");
 		scanf("%d", &refeicoes);
-		// contar o número de todos os alunos entrevistados
+		// contar o nï¿½mero de todos os alunos entrevistados
 		cont_total++;
-		// contar alunos menos de 10 refeições
+		// contar alunos menos de 10 refeiï¿½ï¿½es
 		if (refeicoes < 10){
 			cont_menos_10++;
 		}
-		// contar alunos entre 10 e 20 refeições
+		// contar alunos entre 10 e 20 refeiï¿½ï¿½es
 		if (refeicoes >= 10 && refeicoes <=20){
 			cont_entre_10_20++;
 		}
-		// contar alunos com mais de 20 refeições
+		// contar alunos com mais de 20 refeiï¿½ï¿½es
 		if (refeicoes > 20){
 			cont_mais_20++;
 		}
 		// Perguntar de novo
+		fflush(stdin);
 		printf("Possui mais alunos(S / N) ");
 		scanf("%c", &pessoas);
 	}
 	// Imprimir a quantidade de alunos
-	printf("Total de alunos entrevistados: %d\nAlunos com menos de 10 refeicoes: %d\nAlunos entre 10 e 20 refeicoes: %d\nAlunos com mais de 20 refeicoes", cont_total, cont_menos_10, cont_entre_10_20, cont_mais_20);
-	
+	printf("Total de alunos entrevistados: %d\n", cont_total);
+	printf("Alunos com menos de 10 refeicoes: %d\n", cont_menos_10);
+	printf("Alunos entre 10 e 20 refeicoes: %d\n", cont_entre_10_20);
+	printf("Alunos com mais de 20 refeicoes: %d\n", cont_mais_20);
 }

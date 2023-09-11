@@ -62,11 +62,11 @@ main() {
             // resposta total indiferente++
             cont_total_indiferente++;
         }
-        printf("========================\n");
         // Perguntar se deseja continuar a entrevista
         printf("Deseja continuar [S = sim / N = nao]: ");
         scanf(" %c", &pesquisa);
         pesquisa = toupper(pesquisa);
+        printf("========================\n");
     }
     // percentual nao = resposta total nao / contador total
     percentual_nao = (float) cont_total_nao / cont_total * 100;

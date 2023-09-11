@@ -1,0 +1,12 @@
+h1 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: aquamarine;
+}

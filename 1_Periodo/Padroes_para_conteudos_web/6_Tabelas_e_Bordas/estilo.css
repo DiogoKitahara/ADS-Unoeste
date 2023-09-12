@@ -1,10 +1,7 @@
-td,th{ border-top: 3px double red;
-       border-bottom: 3px dotted blue;
-       border-left: 3px dashed orange;
-       border-right: 3px solid green;
-       border-radius: 5px;
-       box-shadow: 5px 5px 10px blue;
-
+tfoot {
+    text-align: left;
 }
-caption{background-color: blue;
-        color:white;}
+
+tr th {
+    border: 3px double;
+}

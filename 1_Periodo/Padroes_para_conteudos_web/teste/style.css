@@ -1,0 +1,19 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+    background-color: rgb(194, 248, 230);
+}
+
+h1, h2{
+    text-align: center;
+    text-shadow: 2px 2px 2px greenyellow;
+}
+
+p {text-indent: 1cm;}
+
+h3 {
+    font-style: oblique;
+    text-decoration: underline;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 2px greenyellow;
+}

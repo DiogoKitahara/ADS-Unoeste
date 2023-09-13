@@ -1,0 +1,16 @@
+th {
+    border: 1px double black;
+    box-sizing: 20px;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: gray;
+}
+
+.verde {
+    color: green;
+}
+
+.vermelho {
+    color: red
+}

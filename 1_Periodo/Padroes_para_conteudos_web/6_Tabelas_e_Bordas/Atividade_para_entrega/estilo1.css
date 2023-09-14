@@ -11,11 +11,21 @@ body {font-family: Arial, Helvetica, sans-serif;}
     width: 30cm;
 }
 
+#tabela2 tr th{
+    border: 2px solid white
+}
+
 #tabela3 {
     width: 20cm;
+    border: 2px solid violet
+}
+
+#tabela3 tr th{
+    border: 2px solid violet
 }
 
 .tabela4 {
+    border: 2px solid gray;
     width: 25cm;
 }
 
@@ -23,10 +33,6 @@ body {font-family: Arial, Helvetica, sans-serif;}
     margin-left: auto;
     margin-right: auto;
     border-spacing: 0cap;
-}
-
-tr th {
-    border: 2px solid black;
 }
 
 #cursos_da_FIPP {

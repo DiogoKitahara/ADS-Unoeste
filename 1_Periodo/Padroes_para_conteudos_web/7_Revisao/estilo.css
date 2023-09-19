@@ -1,0 +1,35 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1, h2, hr {
+    color: orangered;
+}
+
+.centralizar {
+    text-align: center;
+}
+
+li {
+    text-decoration: underline;
+    margin-left: 1cm;
+}
+
+ul {
+    text-align: left;
+}
+
+table {
+    border: 2px solid blue;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #549fff1f;
+}
+
+tr th {
+    border: 2px dotted black;
+}
+
+tbody tr th {
+    text-align: left;
+}

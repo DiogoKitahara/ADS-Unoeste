@@ -9,16 +9,17 @@ main() {
 	// Loop usando do while
 	do {
 		// Armazenar sexo, idade e resposta
-		printf("Sexo: ");
+		printf("Sexo[M - masculino / F - feminino]: ");
 		fflush(stdin);
 		scanf("%c", &sexo);
 		sexo = toupper(sexo);
 		printf("Idade: ");
 		scanf("%d", &idade);
-		printf("Resposta: ");
+		printf("Resposta [S / N]: ");
 		fflush(stdin);
 		scanf("%c", &resposta);
 		resposta = toupper(resposta);
+		contador_total++;
 		switch (sexo) {
 			// Sexo feminino
 			case 'F':
@@ -69,8 +70,8 @@ main() {
 	// 'F' entre 20 e 30 e respondeu 'N'
 	printf("Mulheres que tem entre 20 e 30 anos e responderam nao: %d\n", contador_feminino_idade);
 	// Porcentagem de homens e mulheres responderam sim
-	porcentagem_masculino = contador_masculino_sim / contador_sim * 100.0;
-	porcentagem_feminino = contador_feminino_sim / contador_sim * 100.0;
+	porcentagem_masculino = (float)contador_masculino_sim / contador_total * 100.0;
+	porcentagem_feminino = (float)contador_feminino_sim / contador_total * 100.0;
 	printf("Porcentagem de homens que responderam sim: %.2f%%\n", porcentagem_masculino);
 	printf("Porcentagem de mulheres que responderam sim: %.2f%%\n", porcentagem_feminino);
 	// Qual a maior porcentagem 'S' ou 'N'

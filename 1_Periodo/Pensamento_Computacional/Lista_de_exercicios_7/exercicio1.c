@@ -20,8 +20,8 @@ do {
     scanf("%d", &categoria);
     printf("-------------------------------\n");
     // Armazenar situacao e deixar maiusculo
-    printf("R - Produto necessita de refrigeração\n");
-    printf("N - Produto não necessita de refrigeração\n");
+    printf("R - Produto necessita de refrigeracao\n");
+    printf("N - Produto nao necessita de refrigeracao\n");
     printf("Situacao: ");
     fflush(stdin);
     scanf(" %c", &situacao);
@@ -65,17 +65,18 @@ do {
     novo_preco = preco + valor_do_aumento - imposto;
     printf("Valor do aumento: %.2f\n", valor_do_aumento);
     printf("Valor do imposto: %.2f\n", imposto);
-    printf("Valor: %.2f\n", novo_preco);
+    printf("Novo preco: %.2f\n", novo_preco);
     // Classificar de acordo com o novo preco
     if (novo_preco <= 50) {
-        printf("Promocao\n");
+        printf("Classficacao: promocao\n");
     }
     else if (novo_preco >= 120) {
-        printf("Extra\n");
+        printf("Classificacao: extra\n");
     }
     else {
-        printf("Normal\n");
+        printf("Classificacao: normal\n");
     }
+    printf("-------------------------------\n");
     // Armazenar resposta e deixar maiusculo
     printf("Deseja continuar [S para sim / N para nao]? ");
     fflush(stdin);

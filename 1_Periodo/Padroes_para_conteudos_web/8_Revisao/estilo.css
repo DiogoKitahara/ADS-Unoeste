@@ -6,10 +6,6 @@ h1, h2, hr {
     color: orangered;
 }
 
-.centralizar {
-    text-align: center;
-}
-
 li {
     text-decoration: underline;
     margin-left: 1cm;
@@ -26,10 +22,23 @@ table {
     background-color: #549fff1f;
 }
 
-tr th {
+tr th, tr td {
     border: 2px dotted black;
 }
 
-tbody tr th {
+tbody tr td {
     text-align: left;
+}
+
+.centralizar {
+    text-align: center;
+}
+
+.anular {
+    border: 0cm;
+}
+
+img {
+    width: 3cm;
+    margin-right: 1cm;
 }

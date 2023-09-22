@@ -4,7 +4,7 @@ main() {
     // Declarar variaveis
     int i = 0, chapa_votada, chapa1 = 0, chapa2 = 0, chapa3 = 0, voto_branco = 0, voto_nulo = 0;
     // Loop 200 vezes
-    while(i < 5)
+    while(i < 200)
     {
         // Armazenar a chapa votada
         printf("1 - Chapa 1\n");
@@ -49,13 +49,13 @@ main() {
     printf("Votos em branco: %d votos\n", voto_branco);
     printf("Votos nulo: %d votos\n", voto_nulo);
     // Se mais de 50% dos votos imprimir chapa vencedora
-    if (chapa1 > 3) {
+    if (chapa1 > 100) {
         printf("Chapa 1 vence com mais de 50%% dos votos\n");
     }
-    else if (chapa2 > 3) {
+    else if (chapa2 > 100) {
         printf("Chapa 2 vence com mais de 50%% dos votos\n");
     }
-    else if (chapa3 > 3) {
+    else if (chapa3 > 100) {
         printf("Chapa 3 vence com mais de 50%% dos votos\n");
     }
     // Senão realizar um segundo turno

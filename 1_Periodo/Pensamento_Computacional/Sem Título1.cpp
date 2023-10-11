@@ -15,7 +15,7 @@ main() {
 		printf("Codigo do produto: ");
 		scanf("%d", &codigo_produto);
 		// Loop para o codigo
-		while (codigo_produto) {
+		while (codigo_produto > 0) {
 			// Armazenar codigo do produto, valor unitario, quantidade vendida
 			printf("Valor unitario: ");
 			scanf("%f", &valor_unitario);
@@ -24,27 +24,27 @@ main() {
 			// Produto com maior quantidade
 			if (quantidade > maior_quantidade) {
 				maior_quantidade = quantidade;
-				codigo_maior_quantidade = codigo;
+				codigo_maior_quantidade = codigo_produto;
 			}
 			// Produto com menor quantidade
 			if (quantidade < menor_quantidade) {
 				menor_quantidade = quantidade;
-				codigo_menor_quantidade = codigo;
+				codigo_menor_quantidade = codigo_produto;
 			}
 			// Produto com maior preco
 			if (valor_unitario > maior_preco) {
 				maior_preco = valor_unitario;
-				codigo_maior_preco = codigo;
+				codigo_maior_preco = codigo_produto;
 			}
 			// Produto com maior preco
 			if (valor_unitario < menor_preco) {
 				menor_preco = valor_unitario;
-				codigo_menor_preco = codigo;
+				codigo_menor_preco = codigo_produto;
 			}
 			// Calcular o valor total do produto
 			valor_total_produto = valor_unitario * quantidade;
 			// Somatorio dos valores dos codigos
-			valor_final_nota += valor_total_produto;
+			valor_final_nota = valor_final_nota + valor_total_produto;
 			// Imprimir resultado
 			// Armazenar codigo do produto
 			printf("Codigo do produto: ");
@@ -53,21 +53,23 @@ main() {
 		// Nota fiscal com menor venda
 		if (valor_final_nota < menor_venda) {
 			menor_venda = valor_final_nota; 
-			fiscal_menor_venda = nota fiscal;
+			fiscal_menor_venda = nota_fiscal;
 		}
 		// Calcular o valor total de vendas
 		total_vendas += valor_final_nota;
 		// Imprimir resultados
+		printf("-------------------------------------------------------------\n");
 		printf("Total de venda de cada nota fiscal: %.2f\n", valor_final_nota);
-		printf("Codigo do produto com a maior quantidade vendida de em cada nota fiscal: %d", codigo_maior_quantidade);
-		printf("Codigo do produto com a menor preco vendida de em cada nota fiscal: %d", codigo_menor_preco);
+		printf("Codigo do produto com a maior quantidade vendida de em cada nota fiscal: %d\n", codigo_maior_quantidade);
+		printf("Codigo do produto com a menor preco vendida de em cada nota fiscal: %d\n", codigo_menor_preco);
+		printf("-------------------------------------------------------------\n");
 		// Armazenar numero da nota fiscal
 		printf("Numero da nota fiscal: ");
 		scanf("%d", &nota_fiscal);
 	}
 	// Imprimir resultados
 	printf("Total de todas as vendas: %.2f\n", total_vendas);
-	printf("Codigo do produto com a menor quantidade vendida entre todas as notas fiscais: %d", codigo_menor_quantidade);
-	printf("Codigo do produto com a maior preco vendida entre todas as notas fiscais: %d", codigo_maior_preco);
-	printf("Nota fiscal que ficou com a menor venda: %d", fiscal_menor_venda);
+	printf("Codigo do produto com a menor quantidade vendida entre todas as notas fiscais: %d\n", codigo_menor_quantidade);
+	printf("Codigo do produto com a maior preco vendida entre todas as notas fiscais: %d\n", codigo_maior_preco);
+	printf("Nota fiscal que ficou com a menor venda: %d\n", fiscal_menor_venda);
 }

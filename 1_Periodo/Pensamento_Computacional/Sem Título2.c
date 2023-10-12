@@ -3,7 +3,7 @@
 
 main() {
 	// Declarar variaveis
-	int laboratorio, micro, ra, menor_ra, tempo, menor_tempo = 99999, contador_aluno = 0, contador_feminino = 0, contador_masculino = 0, mais_alunos = 0, mais_laboratorio, contador_reset;
+	int laboratorio, micro, ra, menor_ra, tempo, menor_tempo = 99999, contador_aluno = 0, contador_feminino = 0, contador_masculino = 0, mais_alunos = 0, mais_laboratorio, contador_reset = 0;
 	float porcentagem_mulher, porcentagem_homem;
 	char sexo;
 	// Armazenar numero do laboratorio
@@ -29,6 +29,7 @@ main() {
 			scanf("%d", &tempo);
 			// contador de alunos
 			contador_aluno++;
+			contador_reset++;
 			// contador mulher
 			if (sexo == 'F'){
 				contador_feminino++;
@@ -42,17 +43,15 @@ main() {
 				menor_tempo = tempo;
 				menor_ra = ra;
 			}
+			// Ver qual laboratório possui mais alunos
+			if (contador_reset > mais_alunos){
+			mais_alunos = contador_reset;
+			mais_laboratorio = laboratorio;
+			}
+			contador_reset = 0;
 			printf("--------------------------------------------------------------------\n");
 			printf("Numero do micro: ");
 			scanf("%d", &micro);
-		}
-		// Esta dando errado por causa do contador_aluno
-		// Erro
-		// Erro
-		// Ver qual laboratório possui mais alunos
-		if (contador_aluno > mais_alunos){
-			mais_alunos = contador_aluno;
-			mais_laboratorio = laboratorio;
 		}
 		// Porcentagem de mulheres em cada laboratorio
 		porcentagem_mulher = (float) contador_feminino / contador_aluno * 100;

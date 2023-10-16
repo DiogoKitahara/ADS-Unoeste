@@ -1,0 +1,57 @@
+As heurísiticas de Nielsen
+    - Para realizar a avaliação da interação humano-computador, nem sempre é possível contar com o acesso aos usuários, ou, ainda, pode ser que isso custe muito caro ao projeto. Nesses casos, o designer deve contar com a ajuda de especialistas que tenham conhecimento sobre o design da interface e, ainda, sobre as necessidades e o comportamento dos usuários.
+    - Nesse sentido, os métodos de inspeção foram criados para serem usados quando os testes de usabilidade são impossíveis, e a qualquer tempo do processo de design. Eles utilizam práticas da engenharia de software e incluem avaliações heurísticas e avaliações de percurso, em que especialistas fazem suas avaliações acerca do design da interface, fazendo-se passar por usuários, a fim de identificar problemas mais óbvios.
+
+Avaliação heurística 
+    - A avaliação heurística, desenvolvida por Nielsen, é um método de inspeção no qual especialistas usam princípios de usabilidade conhecidos como heurísticas para avaliar a interface do usuário. As heurísticas de Nielsen incluem:
+    - Visibilidade do status do sistema: O sistema deve fornecer feedback em tempo adequado para informar aos usuários o que está acontecendo.
+    - Correspondência entre sistema e mundo real: O sistema deve utilizar a linguagem e os conceitos familiares aos usuários.
+    - Controle do usuário e liberdade: Os usuários devem ter meios rápidos de sair de ações indesejadas ou por engano.
+    - Consistência e padrões: O sistema deve seguir padrões para que os usuários não precisem adivinhar o significado de elementos similares.
+    - Prevenção de erros: O design deve evitar erros e, quando ocorrem, deve fornecer mensagens de confirmação.
+    - Reconhecimento em vez de relembrança: O sistema deve ser intuitivo, minimizando a necessidade de os usuários memorizarem ações e informações.
+    - Flexibilidade e eficiência de uso: O sistema deve permitir ações rápidas e personalização de funcionalidades frequentemente usadas.
+    - Estética e design minimalista: A interface não deve conter informações irrelevantes.
+    - Ajudar os usuários a reconhecer, diagnosticar, se recuperar e corrigir erros: Mensagens de erro devem ser claras e orientar os usuários na solução de problemas.
+    - Ajuda e documentação: Embora o sistema deva ser utilizável sem documentação, ajuda e informações devem estar disponíveis e ser de fácil acesso.
+    - Os especialistas realizam a avaliação heurística inspecionando a interface em relação a cada uma dessas heurísticas. Os problemas de usabilidade são identificados e detalhados em cada ciclo de inspeção. Nielsen sugere envolver entre três e cinco avaliadores para obter uma análise abrangente, mas o número pode variar conforme a complexidade da interface.
+    - A avaliação heurística é uma avaliação econômica, pois não envolve usuários nem ambientes especiais, o que a torna mais rápida e acessível. Pode ser usada ao longo do processo de design, adaptando o número de avaliadores à medida que a interface se torna mais complexa. A seleção de heurísticas adequadas é crucial, concentrando a atenção nos aspectos mais importantes da interface. Esta avaliação se concentra na experiência do usuário e na identificação de problemas de usabilidade.
+    - Normalmente uma avaliação heurística passa por três etapas:
+    - Passagem de instruções: momento em que os especialistas ficam cientes do que deverão fazer e de como deverão agir durante o processo avaliativo.
+    - Período avaliativo: a parte em que os especialistas realizam os testes. É preciso percorrer a interface várias vezes, a fim de identificar todos os problemas e detalhar aqueles que já foram identificados.
+    - Consolidação: os especialistas que participaram da avaliação se encontram para discutir e analisar os resultados em que chegaram, priorizar os problemas e ainda sugerir soluções para cada um deles.
+
+Os teste de usabilidade
+    - Os testes de usabilidade são uma forma de coletar dados por meio de observação, entrevistas e questionários para avaliar se uma interface é utilizável pelos usuários e se eles conseguem realizar as tarefas para as quais a interface foi desenvolvida. Eles desempenham um papel fundamental na avaliação de Interação Humano-Computador (IHC) e ajudam a determinar o nível de usabilidade de uma interface.
+    - Geralmente realizados em laboratórios com equipes experientes em avaliações de design de interface de usuário, os testes de usabilidade têm como objetivo identificar problemas e melhorias na interface. No entanto, não é essencial ter um laboratório dedicado para realizar esses testes, pois podem ser conduzidos em diferentes ambientes.
+    - Antes de iniciar os testes de usabilidade, é crucial definir objetivos claros para a avaliação. Isso pode incluir a identificação de aspectos da interface que estão funcionando bem ou mal, problemas a serem resolvidos e áreas de melhoria. Os participantes dos testes devem ser representativos dos usuários reais da interface, ou seja, devem refletir o público-alvo em termos de conhecimento em informática, idade, etc.
+    - Os pesquisadores ou avaliadores devem ter um conhecimento profundo do domínio da aplicação e da interface do usuário. Eles não devem influenciar os participantes ou defender seu próprio trabalho durante os testes.
+    - As tarefas definidas para os testes de usabilidade devem ser representativas das atividades diárias dos usuários e devem abranger todas as funcionalidades essenciais da interface. É importante estabelecer critérios de desempenho ideais e mínimos e registrar o desempenho dos participantes para comparação.
+    - Os testes de usabilidade podem revelar três tipos de problemas: barreiras, obstáculos e ruídos. As barreiras são erros frequentes que impedem os usuários de progredir nas tarefas, os obstáculos são erros que os usuários superam sozinhos e os ruídos são erros que afetam apenas o desempenho, mas não impedem a conclusão da tarefa.
+    - Os resultados dos testes de usabilidade são documentados para orientar os designers na resolução de problemas e na melhoria da interface em versões futuras. Esses testes desempenham um papel crucial na identificação de problemas de usabilidade que seriam difíceis de detectar apenas com feedback pós-implantação ou relatórios de uso.
+
+Aplicação dos testes de usabilidade
+    - O processo de teste de usabilidade pode ser dividido em várias etapas:
+    - Preparação para o teste de usabilidade: Nesta etapa, é importante garantir que tudo esteja pronto para o teste de usabilidade antes que os participantes cheguem. Também é essencial limpar qualquer dado residual de ciclos de teste anteriores, se aplicável.
+    - Introdução ao teste de usabilidade: Esta etapa é crucial para colocar os participantes à vontade e explicar o objetivo do teste. Alguns pontos importantes a serem destacados incluem: a avaliação é do artefato, não do participante; os resultados serão usados para melhorar a interface; o procedimento é confidencial; podem ser feitas gravações, mas os rostos dos participantes não serão gravados; questionamentos são permitidos, mas nem todos serão respondidos; explicação das atitudes esperadas dos participantes durante o teste.
+    - Teste de usabilidade: Durante o teste, é importante que apenas um pesquisador ou avaliador interaja com os participantes. Esse pesquisador deve ser cuidadoso para não influenciar o participante com comentários ou expressões faciais relacionadas à sua performance, a menos que a dificuldade seja grave.
+    - Encerramento: Após o tempo definido para o ciclo de teste, os participantes podem fazer comentários gerais sobre a interface. Isso pode ser feito em uma reunião ou por meio do preenchimento de um questionário específico para a interface testada.
+    - Essas etapas podem ser conceituadas de maneira ligeiramente diferente por outros autores. Barbosa e Silva (2010) descrevem as etapas da seguinte forma:
+    - Preparação: Definir tarefas, recrutar participantes, preparar material de observação e realizar um teste-piloto.
+    - Coleta de dados: Observar e registrar a performance e a opinião dos participantes durante sessões de uso controladas.
+    - Interpretação e consolidação dos resultados: Reunir, contabilizar e resumir os dados coletados dos participantes.
+    - Relato dos resultados: Relatar a performance e a opinião dos participantes.
+    - Além disso, existem técnicas como a gravação em vídeo e o pensamento em voz alta que podem ser usadas para fornecer mais insights durante o teste de usabilidade.
+
+Gravação em vídeo 
+    - É uma ferramenta importante para o teste, os designers percebem, assistindo aos vídeos, que os usuários acessam o menu errado repetidas vezes, por exemplo, eles passam a entender a importância de elaborar a interface de acordo com as expectativas dos usuários, e não as suas próprias
+    - No entanto, como a análise de vídeos pode ser uma atividade monótona e incômoda, é fundamental que sejam feitas anotações durante a realização do teste.
+
+Pensamento em voz alta
+    - A técnica do "pensamento em voz alta" é uma ferramenta valiosa durante os testes de usabilidade, além da gravação de vídeo. Nesse método, os participantes são convidados a verbalizar seus pensamentos enquanto realizam tarefas na interface. Essa abordagem tem várias finalidades:
+    - Melhorar o ambiente de testes: Encorajar os participantes a falar em voz alta durante a interação com a interface pode criar um ambiente mais descontraído e confortável.
+    - Obter feedback espontâneo: O pensamento em voz alta permite que os participantes expressem seus pensamentos, percepções e opiniões sobre a interface de forma espontânea, sem a necessidade de perguntas diretas.
+    - Capturar interpretações dos participantes: Ao ouvir o que os participantes estão pensando enquanto usam a interface, os pesquisadores podem entender como eles interpretam cada elemento da interface e como percebem a sequência de ações.
+    - Para implementar o pensamento em voz alta, os pesquisadores precisam estar preparados para incentivar os participantes a falar sem interferir na maneira como eles realizam as tarefas. Algumas perguntas podem servir como guia para estimular a expressão dos pensamentos dos participantes, como "Em que você está pensando agora?" ou "O que você espera que aconteça se você fizer isso?"
+    - Uma técnica adicional para promover o pensamento em voz alta é fazer com que os participantes trabalhem em duplas. Isso estimula a discussão entre eles, e à medida que um participante explica ao outro o que está fazendo ou o que deve ser feito, é possível captar as dificuldades que surgem durante a interação. Essa abordagem é particularmente útil quando os participantes são crianças, que muitas vezes precisam explorar a interface juntas.
+    - A principal vantagem dessa técnica é que ela destaca o que os usuários estão pensando enquanto realizam tarefas na interface, proporcionando um valioso insight sobre sua experiência. Os comentários dos participantes devem ser registrados e analisados criteriosamente para enriquecer o conjunto de ideias resultante do teste de usabilidade.

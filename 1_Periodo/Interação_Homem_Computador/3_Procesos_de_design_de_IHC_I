@@ -1,0 +1,63 @@
+Processo de design de IHC (ciclos de vida)
+    - O processo de design de Interação Humano-Computador (IHC) envolve a criação de artefatos (produtos criados pelo homem com um propósito específico). O design busca melhorar artefatos, tornando-os funcionais, estéticos e adequados às necessidades dos usuários. O processo de design de IHC inclui três fases principais:
+    - Análise da situação atual: Envolve uma análise detalhada do artefato atual, considerando fatores de usabilidade. A usabilidade refere-se à facilidade de uso. Nesta fase, são identificadas oportunidades de melhoria e necessidades dos usuários.
+    - Ação ou intervenção: Nesta fase, são propostas melhorias para o artefato atual, visando impactar positivamente a usabilidade. Isso pode resultar em modificações no design do artefato ou apenas nos processos subjacentes.
+    - Avaliação da ação: A avaliação é contínua ao longo de todo o processo de design, desde o planejamento até após a implementação. Ela envolve verificar se os critérios de usabilidade estabelecidos estão sendo atendidos.
+    - Além disso, existem duas abordagens para o design de IHC:
+    - Racionalismo técnico: Segue princípios e regras definidos para resolver problemas, sem questionar o que está estabelecido.
+    - Reflexão: Considera elementos específicos de cada situação, permitindo que o designer questione e reflita sobre a melhor solução.
+    - Os processos de design de IHC incluem atividades como estudar as ações dos usuários, entender suas reclamações, identificar suas necessidades, criar protótipos e desenvolver o produto final com base nas especificações do usuário. Existem vários modelos de processos de design, como o modelo cascata, espiral, Eason, estrela e Shneiderman, cada um com suas próprias características, mas todos compartilham etapas comuns e têm como objetivo criar interfaces eficazes e amigáveis para os usuários.
+
+Ilustração dos ciclos de vida
+    - Os processos de design muitas vezes são representados de maneira linear, o que reflete uma abordagem mais tradicional da engenharia de software, usada no desenvolvimento de software. Esses processos buscam criar um padrão para que práticas específicas sejam reconhecidas por todos os profissionais da área.
+    - Cada modelo de processo de design de IHC estabelece um ciclo de vida para o design. Vamos dar uma breve explicação dos principais processos de design
+
+Ciclo de vida em cascata ou linear
+    - O ciclo de vida em cascata, também conhecido como modelo linear, é uma abordagem sequencial de desenvolvimento de projetos, frequentemente utilizado na engenharia de software. Nesse modelo, as atividades são realizadas de maneira linear e sequencial, uma após a outra, sem retrocessos. As principais fases desse ciclo de vida incluem:
+    - Análise de Requisitos: O designer coleta dados sobre o artefato atual e as necessidades dos usuários.
+    - Projeto e Especificação: O designer propõe uma solução para melhorar ou substituir o artefato atual.
+    - Implementação: O designer desenvolve a interface com base na solução idealizada.
+    - Testes: Os usuários utilizam a interface, fornecendo feedback ao designer sobre a solução proposta.
+    - Manutenção: O designer faz melhorias com base no feedback dos usuários até que a interface esteja satisfatória.
+    - O ciclo em cascata tem a limitação de que as atividades são executadas de forma sequencial, sem possibilidade de retorno às fases anteriores. Isso pode ser problemático, pois muitas vezes é difícil compreender completamente os requisitos dos usuários antes de iniciar o design. A necessidade de alterações durante o processo pode ser custosa em termos de tempo e recursos, e um projeto mal elaborado pode comprometer o sucesso do desenvolvimento.
+    - É importante considerar que o ciclo em cascata foi um dos primeiros modelos de engenharia de software e serviu como base para o desenvolvimento de outros ciclos de vida mais flexíveis e iterativos, que permitem ajustes e adaptações ao longo do processo.
+
+Processo com ciclo de vida em espiral
+    - O ciclo de vida em espiral é uma abordagem de desenvolvimento que surgiu como uma alternativa aos problemas do ciclo de vida em cascata ou linear. Ele incorpora a análise de riscos e a prototipagem como elementos centrais. O ciclo de vida em espiral é composto por quatro atividades principais que se repetem ao longo do processo:
+    - Planejamento: Nesta fase, são definidos os objetivos, soluções e restrições para a interface que está sendo desenvolvida.
+    - Análise de Riscos: Envolve a identificação de riscos, a avaliação de alternativas e a resolução de problemas que possam surgir durante o desenvolvimento da interface.
+    - Desenvolvimento do Produto: Esta fase consiste no desenvolvimento da própria interface, com base nas decisões tomadas nas fases anteriores.
+    - Avaliação do Cliente: Inclui a avaliação do progresso obtido pelo cliente e o planejamento de novas fases do projeto.
+    -Cada uma das fases começa com objetivos definidos e termina com uma avaliação feita pelo cliente em relação ao progresso alcançado. O ciclo de vida em espiral utiliza as mesmas atividades que o modelo em cascata, incluindo análise de requisitos, projeto e implementação, mas enfatiza a necessidade de iterações e a introdução de protótipos para revisão dos requisitos.
+    - Essa abordagem permite que a interface evolua ao longo do desenvolvimento, tornando mais fácil para o cliente e o designer compreenderem seus papéis no projeto e reagirem aos riscos à medida que surgem em cada fase de evolução.
+
+Ciclo de vida em estrela
+    - Esse é um modelo com ciclo de vida bastante conhecido. Ele tem uma representação para o processo de design em formato de ondas que se alternam.
+    - As atividades envolvidas nesse ciclo de vida se assemelham às do ciclo de vida me cascata, mas a avaliação é o elemento central, para onde todas as atividades aponta quando se encerram, e o início do ciclo de vida pode acontecer em qualquer uma das atividades
+
+Ciclo de vida iterativo e incremental
+    - O modelo de ciclo de vida iterativo e incremental é uma alternativa ao ciclo de vida em cascata, projetado para lidar com seus desafios. Nesse modelo, o desenvolvimento da interface é dividido em ciclos, cada um composto por atividades semelhantes às do ciclo em cascata, como levantamento e análise de requisitos, projeto, implementação, testes, implantação e manutenção.
+    - A principal diferença entre o ciclo iterativo e incremental e o ciclo de vida linear ou em cascata é que, no modelo iterativo e incremental, as atividades de desenvolvimento são repetidas a cada novo ciclo. Por exemplo, em um ciclo de desenvolvimento da interface, um conjunto de requisitos pode ser considerado. Em um novo ciclo, um conjunto diferente de requisitos é considerado, reiniciando as atividades. Isso resulta em incrementos no desenvolvimento da interface a cada ciclo concluído.
+    - É importante observar que o modelo de ciclo de vida iterativo e incremental só é apropriado quando os requisitos para o desenvolvimento da interface podem ser divididos em partes que podem ser desenvolvidas em ciclos separados. Esse modelo oferece flexibilidade e a capacidade de incorporar feedback e melhorias ao longo do tempo, tornando-o adequado para projetos em que os requisitos não são totalmente claros desde o início.
+
+Ciclo de vida de Eason
+    - Com o surgimento da ideia de que um bom design é aquele que satisfaz ao usuário, e também que os designers e clientes devem interagir em um ambiente colaborativo, vários modelos de ciclo de vida surgiram.
+    - A característica principal desses novos modelos foi o envolvimento efetivo dos usuários ao longo do processo de design, abandonando a ideia de que eles só devem participar antes do projeto, ainda na fase de levantamento de requisitos, e depois da implementação pronta, apenas para comentar decisões que o designer muitas vezes tomou sozinho.
+    - Um dos modelos que surgiu foi o ciclo de vida de Eason (Figura 5), que tem um processo de design representado por um ciclo que é centrado nas pessoas, no trabalho e na tecnologia, além de ser ordenado.
+
+Ciclo de vida de Shneiderman
+    - Se baseia em três ideias:
+    - No início do processo de design, o designer deve elaborar um conjunto  de princípios e regras de design, que podem ser chamadas de guidelines, ou linhas-guia.
+    - Deverão ser usadas ferramentas de prototipagem para auxiliar na definição da solução que será apresentada ao usuário.
+    - Deverão ser feitas avaliações por pessoas experientes e testes pelos usuários.
+
+A usabilidade em processos de design
+    - Usabilidade, na área de Interação Humano-Computador (IHC), é um elemento crucial de qualidade que é desenvolvido por meio de um conjunto de atividades interligadas, dependentes do modelo de ciclo de vida escolhido pelo designer. A escolha do ciclo de vida depende de vários fatores, como o contexto do projeto de interface, o grau de inovação proposto pelo designer, seu conhecimento sobre o objeto do projeto, recursos disponíveis e a participação dos usuários durante o trabalho de design.
+    - Em termos gerais, usabilidade refere-se à capacidade de um artefato ou sistema ser facilmente utilizado pelos usuários. Isso inclui:
+    - Efetividade: A capacidade do usuário de atingir seus objetivos com precisão e completude.
+    - Eficiência: A rapidez com que o usuário atinge seus objetivos.
+    - Satisfação: A experiência positiva do usuário ao usar a interface.
+    - Operacionalidade: O esforço do usuário para operar a interface e controlar seu trabalho.
+    - Além disso, a usabilidade também envolve conceitos relacionados, como aceitabilidade, utilizabilidade e ergonomia. Normas ISO, como a ISO 9126 e a ISO 9241, estabelecem padrões para a usabilidade em software, com foco em características como inteligibilidade, apreensibilidade, atratividade e conformidade.
+    - O pesquisador Jakob Nielsen é uma figura central no estudo da usabilidade e enfatiza a importância da facilidade de aprendizagem, eficiência, facilidade de memorização, segurança e satisfação do usuário em relação à usabilidade.
+    - Em resumo, a usabilidade é essencial na IHC e visa garantir que os usuários possam atingir seus objetivos de maneira eficaz, eficiente e satisfatória ao utilizar uma interface ou sistema. Ela é avaliada com base em metas como eficácia, eficiência, segurança, utilidade, facilidade de aprendizado e memorização.

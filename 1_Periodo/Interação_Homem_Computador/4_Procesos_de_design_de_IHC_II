@@ -1,0 +1,81 @@
+O design contextual:
+    - O design contextual é um processo de design em Interação Humano-Computador (IHC) que coloca o usuário no centro do desenvolvimento de artefatos, enfocando a coleta de dados relevantes por meio do estudo das pessoas e de seu contexto de uso. Esse processo visa que os designers compreendam profundamente as necessidades dos usuários, analisando o ambiente em que eles vivem ou trabalham.
+
+Investigação contextual
+    - Envolve o conhecimento acerca dos usuários, de suas necessidades, de seus objetivos e a forma como ele trabalha e executa suas atividades rotineiramente. Para que a investigação seja bem-sucedida, são usadas técnicas de coleta de dados em campo, ou seja, o designer vai até o ambiente de trabalho do usuário, a fim de obter informações minuciosas sobre como o usuário de um artefato interage com o produto, diretamente no ambiente onde o utiliza.
+    - Algumas das técnicas utilizadas são a observação do usuário enquanto   realiza suas atividades e também a conversa com o usuário enquanto ele trabalha com o produto, que vão resultar em relatos escritos que servirão de fundamento para a fase de modelagem ou interpretação
+
+Modelagem de trabalho ou interpretação
+    - No design contextual, o conhecimento adquirido pelo designer durante a investigação é utilizado para modelar o trabalho de cada usuário de forma individualizada. Esse processo envolve levantamento de informações sobre o fluxo de trabalho, os artefatos utilizados, o ambiente de trabalho e a cultura do local de trabalho.
+    - Para garantir uma interpretação precisa, os dados coletados durante a investigação são analisados e posteriormente consolidados. Além disso, são elaborados modelos de trabalho que ajudam a compreender os elementos críticos das atividades relevantes para o design.
+    - Existem cinco tipos de modelos de trabalho que podem ser utilizados no design contextual, conforme Barbosa e Silva (2010), o modelo de fluxo, modelo de sequência, modelo de artefato, modelo de cultura e modelo físico
+
+Consolidação dos dados
+    - A fase de consolidação no design contextual envolve a organização e a atribuição de significado ao trabalho realizado por diferentes perfis, papéis ou níveis de usuários investigados. Essa atividade fornece uma base sólida para o designer reprojetar a forma como os usuários executam suas atividades.
+    - Durante a consolidação, os dados obtidos na fase de investigação são analisados para identificar padrões comuns relatados por diferentes usuários e, em seguida, esses dados são consolidados para auxiliar o designer nas fases subsequentes do projeto.
+    - O resultado da consolidação dos dados é representado em um diagrama de afinidade, que oferece uma visão global e coletiva do modo de trabalho dos usuários, sem perder de vista as particularidades de cada um.
+    - Nessa fase, os modelos de trabalho desenvolvidos na fase de modelagem são consolidados em cinco modelos gerais, correspondendo a cada tipo de modelo (fluxo, sequência, artefato, cultura e físico). Esses cinco modelos geram um conjunto de dados abrangente que serve como base para orientar o projeto de Interação Humano-Computador (IHC). Essa consolidação é essencial para garantir que o design resultante atenda às necessidades específicas dos usuários de forma eficaz.
+
+Reprojeto do trabalho
+    - A consolidação dos modelos de trabalho, realizada na fase de consolidação dos dados vai servir de base para que o designer consiga reprojetar a maneira com a qual os usuários trabalham na situação atual. O designer vai poder utilizar histórias em quadrinhos como ferramenta para demonstrar a sua ideia a respeito de melhorias para as práticas de trabalho dos usuários.
+    - Envolve a idealização de uma nova forma para os usuários trabalharem e executarem suas atividades
+
+Design do ambiente do usuário
+    - Depois que o designer elaborar a forma reprojetada de trabalho para os usuários, é possível que ele projete uma solução de interface que sirva de apoio para essa nova forma de trabalhar que foi idealizada.
+    - Nessa fase, deve ser demonstrado como cada parte do novo design conseguirá dar suporte às atividades realizadas pelos usuários, como o usuário deve chegar a tais funcionalidades e como deve fazer para sair do sistema e de suas diversas partes.
+
+Prototipação
+    - Envolve a elaboração de um protótipo da interface idealizada. O protótipo deve ser avaliado junto aos usuários, o que vai permitir revisar e melhorar o projeto de forma colaborativa e iterativa, até que seja atingida uma solução satisfatória.
+    - Essa fase auxilia os designers a melhorar cada vez mais o design projetado. Os protótipos são ferramentas que conseguem colocar à prova as primeiras ideias acerca do design, observar pontos que faltaram e identificar partes que podem ser melhoradas.
+
+Teste com os usuários
+    - Envolve a execução de testes com a interface idealizada, diretamento com os usuários
+    - Após a fase de testes com os usuários, a interface passa a ser implantada e é iniciada a fase de manutenção. A partir desse momento, o designer fica disponível para fazer manutenções corretivas solicitadas pelos usuários, em razão de erros ou falta de itens, ou ainda manutenções evolutivas, caso os usuários entendam que a interface deve receber funcionalidades novas.
+    - O design contextual é um processo de design de IHC que possibilita ao designer conhecer e entender de forma profunda e detalhada as necessidades dos usuários, por meio de uma análise minuciosa do contexto do uso do design.
+    - O processo de design contextual é bastante utilizado para o desenho de sistemas de informação, incluindo não somente software, mas também hardware. Esse tipo de processo de design também é muito utilizado para ensinar, no meio universitário, a disciplina de IHC e design centrado no usuário para os alunos 
+
+Design baseado em cenários:
+    - O design baseado em cenários é um processo de design de Interação Humano-Computador (IHC) que utiliza diversos tipos de cenários como representação básica durante o desenvolvimento de soluções. Esse método cria um ambiente colaborativo entre os usuários e os designers para construir o design de forma centrada no usuário.
+    - Cenários são descrições narrativas de como os usuários imaginam ou tentam usar sistemas em situações específicas. Eles são usados para representar, analisar e planejar como um sistema de computador afeta as atividades e experiências dos usuários.
+    - O processo de design baseado em cenários envolve várias etapas:
+    - Análise do problema: Estudo da situação atual, do sistema usado pelos usuários e das necessidades dos interessados no novo sistema. Cenários são criados para representar os problemas identificados, incluindo características dos usuários, atividades, artefatos usados e contexto de uso.
+    - Projeto de solução de IHC: Com base nos cenários dos problemas, criação de soluções de IHC que atendam às necessidades dos usuários e resolvam os problemas identificados. Nesta fase, são elaborados cenários de atividade, informação e interação.
+    - Prototipação: Desenvolvimento de protótipos da solução idealizada, com base nos cenários elaborados nas fases anteriores.
+    - Avaliação da solução proposta: Discussão e análise da solução de IHC proposta para garantir que atenda às necessidades identificadas.
+    - Uma característica distintiva deste processo é a iteração contínua. Os cenários são revisados e analisados ao longo de todo o processo, permitindo ajustes à medida que o design evolui.
+    - Os cenários podem ser representados de várias maneiras, como narrativas textuais simples, histórias em quadrinhos, vídeos ou desenhos de protótipos. Eles servem como base para testes de usabilidade quando o design está pronto.
+    - Vantagens do design baseado em cenários incluem consideração da visão do usuário, facilidade de compreensão, interação eficaz entre designers e usuários e uso dos cenários como base para testes. Isso cria um ambiente de design centrado no usuário que resulta em produtos de IHC mais alinhados com as necessidades dos usuários.
+    - Para ilustrar, um cenário para o desenvolvimento de uma interface de caixa eletrônico poderia incluir a descrição narrativa de um usuário chegando ao caixa, inserindo o cartão, realizando uma transação e retirando dinheiro.
+
+Design centrado na comunicação:
+    - O design centrado na comunicação é um processo de design de Interação Humano-Computador (IHC) que tem como principal objetivo criar soluções de IHC que sejam altamente comunicativas e eficazes para os usuários. Nesse método, os usuários desempenham um papel ativo ao longo de todo o ciclo de design e desenvolvimento, fornecendo informações e contribuindo para o produto final.
+    - Principais características do design centrado na comunicação:
+    - Participação ativa dos usuários: Os usuários desempenham um papel importante no processo, fornecendo informações, esclarecendo dúvidas e contribuindo com suas expectativas e necessidades.
+    - Responsabilidade compartilhada: Os usuários se sentem como membros da equipe de design e desenvolvimento, compartilhando a responsabilidade pelo produto final.
+    - Envolvimento desde o início: A abordagem de comunicação é incorporada desde o início do projeto, visando evitar falhas de comunicação e garantir que os usuários compreendam o sistema de forma eficaz.
+    - O processo de design centrado na comunicação envolve várias atividades, incluindo:
+    - Análise do usuário, domínio e contexto de uso: Estudo do contexto em que os usuários interagem com o sistema, compreendendo suas necessidades e características.
+    - Projeto de interação e interface: Criação da interface do sistema, levando em consideração as informações coletadas dos usuários.
+    - Avaliação da solução projetada: Os usuários analisam e avaliam o design proposto para garantir que atenda às suas expectativas e necessidades.
+    - A principal diferença desse processo em relação a outros métodos é o foco na prevenção e recuperação de falhas de comunicação. Isso envolve a explicação de elementos técnicos aos usuários, a criação de mecanismos para evitar erros e a oferta de suporte para recuperação após uma falha de comunicação.
+    - As estratégias para prevenir e recuperar falhas de comunicação incluem:
+    - Prevenção passiva: Explicação de elementos técnicos para os usuários, como o formato de datas em um campo de entrada.
+    - Prevenção ativa: Implementação de restrições para evitar erros, como impedir a digitação de letras em campos numéricos.
+    - Prevenção apoiada: Oferecer orientação ao usuário para evitar falhas, como confirmações antes de excluir dados.
+    - Recuperação apoiada: Após uma falha, permitir que o usuário corrija o erro de forma produtiva.
+    - Captura de erro: Informar o usuário sobre falhas irrecuperáveis e oferecer orientações sobre como lidar com a situação fora da interface.
+    - A comunicação entre o designer e o usuário desempenha um papel fundamental, com ambas as partes envolvidas em um diálogo contínuo para garantir que as expectativas e necessidades dos usuários sejam atendidas de maneira eficaz. Isso pode envolver perguntas, esclarecimentos e discussões para garantir que o design seja altamente comunicativo e eficaz.
+
+O design de interface:
+    - O processo de design de interface tem como objetivo projetar a parte do software que os usuários interagem, garantindo que essa interação seja eficaz, satisfatória e agradável. A interface do usuário (UI) engloba todos os elementos com os quais os usuários interagem, sejam eles visuais ou conceituais.
+    - Para criar uma boa interface de usuário, é crucial que o designer leve em consideração as necessidades e objetivos dos usuários, tornando a interação o mais simples e eficiente possível. Isso envolve garantir que os usuários compreendam as funcionalidades disponíveis, como acessá-las e como executar procedimentos na interface.
+    - O design de interface não se aplica apenas a software, mas a qualquer artefato em que haja interação homem-máquina, desde objetos pequenos, como tesouras, até grandes, como aviões e navios. O foco principal está em facilitar a interação do usuário e melhorar sua eficiência.
+    - Princípios do design de interface incluem:
+    - Organização por aproximação semântica: Agrupar elementos relacionados semanticamente para facilitar a compreensão do usuário, como agrupar funções de copiar, colar e cortar em um submenu.
+    - Possibilidade de organização e personalização: Permitir que os usuários organizem e personalizem elementos, como a opção de ordenar arquivos por diferentes critérios.
+    - Indicação clara da localização do usuário: Fornecer indicadores visuais, como barras de rolagem, para mostrar onde o usuário está em um documento ou site.
+    - Menus não excessivamente complexos: Evitar menus com muitas opções para que os usuários possam memorizá-las facilmente.
+    - Mensagens visíveis e compreensíveis: Apresentar mensagens de forma visível e com opção de fechamento, garantindo que os usuários entendam e possam reagir apropriadamente.
+    - Uso cuidadoso de cores e ícones: Utilizar cores e ícones com moderação, garantindo que não causem poluição visual.
+    - O designer de interface é responsável por entender as necessidades dos usuários e criar uma interação eficiente entre os usuários e a máquina. Um bom design de interface não apenas permite que os usuários realizem suas tarefas com eficiência, mas também contribui para a fidelização dos usuários, pois uma experiência positiva com a interface tende a incentivar o uso contínuo do artefato.
+    

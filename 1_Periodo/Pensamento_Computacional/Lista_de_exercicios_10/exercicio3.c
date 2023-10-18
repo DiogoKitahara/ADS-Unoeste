@@ -1,11 +1,12 @@
 #include <stdio.h>
+#define TF 12
 
 main() {
     // Declarar variaveis
     int i, maior_mes, menor_mes;
-    float vetor_temperatura[12], maior_temperatura = 0, menor_temperatura = 100;
+    float vetor_temperatura[TF], maior_temperatura = 0, menor_temperatura = 100;
     // Loop repete 12 vezes
-    for (i = 0; i < 12; i++) {
+    for (i = 0; i < TF; i++) {
         // Armazenar media das temperaturas de cada mes
         printf("Media da temperatura do mes %d: ", i + 1);
         scanf("%f", &vetor_temperatura[i]);
@@ -22,6 +23,6 @@ main() {
     }
     // Imprimir resultados
     printf("------------------------------------------------------\n");
-    printf("O mes %d teve a maior temperatura de %.2f°C\n", maior_mes, maior_temperatura);
-    printf("O mes %d teve a menor temperatura de %.2f°C\n", menor_mes, menor_temperatura);
+    printf("O mes %d teve a maior temperatura de %.2fC\n", maior_mes, maior_temperatura);
+    printf("O mes %d teve a menor temperatura de %.2fC\n", menor_mes, menor_temperatura);
 }

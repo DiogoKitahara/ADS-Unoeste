@@ -1,10 +1,11 @@
 #include <stdio.h>
+#define TF 6
 
 main() {
     // Declarar variaveis
-    int i, vetor[6], contador_impar = 0, contador_par = 0;
+    int i, vetor[TF], contador_impar = 0, contador_par = 0;
     // Loop se repete 6 vezes
-    for(i = 0; i < 6; i++){
+    for(i = 0; i < TF; i++){
         // Armazenar numeros no vetor
         printf("Numero: ");
         scanf("%d", &vetor[i]);

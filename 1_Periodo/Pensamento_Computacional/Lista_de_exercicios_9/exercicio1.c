@@ -3,7 +3,7 @@
 
 main() {
   // Declarar variaveis
-  int laboratorio, micro, ra, menor_ra, tempo, menor_tempo, contador_aluno = 0, contador_feminino = 0, contador_masculino = 0, mais_alunos = 0, mais_laboratorio, contador_reset = 0, contador_aluno_lab = 0;
+  int laboratorio, micro, ra, menor_ra, tempo, menor_tempo, contador_aluno = 0, contador_feminino = 0, contador_masculino = 0, mais_alunos = 0, mais_laboratorio, contador_aluno_lab = 0;
   float porcentagem_mulher, porcentagem_homem;
   char sexo;
   // Armazenar numero do laboratorio
@@ -13,7 +13,7 @@ main() {
   while(laboratorio > 0){
     // Dar valor para o menor tempo
     menor_tempo = 99999;
-    // Resetar o contador de mulher e aluno de cada laboratÃ³rio
+    // Resetar o contador de mulher e aluno de cada laboratório
     contador_aluno_lab = 0;
     contador_feminino = 0;
     // Armazenar micro
@@ -33,7 +33,6 @@ main() {
       // contador de alunos
       contador_aluno++;
       contador_aluno_lab++;
-      contador_reset++;
       // contador mulher
       if (sexo == 'F'){
         contador_feminino++;
@@ -42,21 +41,19 @@ main() {
       if (sexo == 'M') {
         contador_masculino++;
       }
-      // Ver qual aluno estï¿½ a menos tempo no micro
+      // Ver qual aluno est? a menos tempo no micro
       if (tempo < menor_tempo) {
         menor_tempo = tempo;
         menor_ra = ra;
       }
-      // Ver qual laboratï¿½rio possui mais alunos
-      if (contador_reset > mais_alunos){
-      mais_alunos = contador_reset;
-      mais_laboratorio = laboratorio;
-      }
-      contador_reset = 0;
-      mais_alunos = 0;
       printf("--------------------------------------------------------------------\n");
       printf("Numero do micro: ");
       scanf("%d", &micro);
+    }
+    // Ver qual laborat?rio possui mais alunos
+    if (contador_aluno_lab > mais_alunos) {
+    	mais_alunos = contador_aluno_lab;
+    	mais_laboratorio = laboratorio;
     }
     // Porcentagem de mulheres em cada laboratorio
     porcentagem_mulher = (float) contador_feminino / contador_aluno_lab * 100;

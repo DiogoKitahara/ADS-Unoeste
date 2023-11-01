@@ -4,24 +4,22 @@
     <head>
         <meta charset="utf-8">
         <title>Login</title>
-        <link rel="stylesheet" href="estile.css">
+        <link rel="stylesheet" href="estilo1.css">
     </head>
     <body>
-        <h1>Login</h1>
-        <hr>
-        <form name="formulario1" action="pagina2.html">
-            <div>
-                <label for="tusuario">Nome</label>
-                <input type="text" name="txtUsuario">
+        <section class="area-login">
+            <div class="login">
+                <h1>Login</h1>
+                <hr>
+                <form name="formulario1" action="pagina2.html">
+                    <input type="text" name="txtUsuario" placeholder="Usuario">
+                    <input type="password" name="PassSenha" placeholder="Senha">
+                    <div>
+                    <input style="width: 177px;" type="reset" name="botaoCancelar" value="Cancelar">
+                    <input style="width: 177px;" type="submit" name="botaoEnviar" value="Enviar">
+                    </div>
+                </form>
             </div>
-            <div>
-                <label for="tsenha">Senha</label>
-                <input type="password" name="PassSenha">
-            </div>
-            <div>
-                <input type="reset" name="botaoCancelar" value="Cancelar">
-                <input type="submit" name="botaoEnviar" value="Enviar">
-            </div>
-        </form>
+        </section>
     </body>
 </html>

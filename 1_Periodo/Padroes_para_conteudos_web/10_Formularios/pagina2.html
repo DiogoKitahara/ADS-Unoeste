@@ -4,44 +4,48 @@
     <head>
         <meta charset="utf-8">
         <title>Formulário</title>
-        <link rel="stylesheet" href="estilo2.css">
+        <link rel="stylesheet" href="estilo1.css">
     </head>
     <body>
-        <h1>Formulário</h1>
-        <hr>
-        <form>
-            <div>
-                <label>Nome Completo</label>
-                <input type="text">
+        <section class="area-login">
+            <div class="login">
+                <h1>Formulário</h1>
+                <hr>
+                <form>
+                    <div>
+                        <label>Nome Completo</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <input type="email">
+                    </div>
+                    <div>
+                        <label>Telefone</label>
+                        <input type="tel">
+                    </div>
+                    <div>
+                        <label>Conhecimento em linguagens de programação</label>
+                        <input type="checkbox">Python
+                        <input type="checkbox">C#
+                        <input type="checkbox">JavaScript
+                        <input type="checkbox">Ruby
+                        <input type="checkbox">SQL
+                    </div>
+                    <div>
+                        <label>Cargo de Preferência</label>
+                        <input type="radio" name="radio1">Back-end
+                        <input type="radio" name="radio1">Front-end
+                        <input type="radio" name="radio1">Full-stack
+                    </div>
+                    <div>
+                        <label>Experiência</label>
+                        <textarea rows="10" cols="20"> 
+                            Escreve aqui
+                        </textarea>
+                    </div>
+                </form>
             </div>
-            <div>
-                <label>Email</label>
-                <input type="email">
-            </div>
-            <div>
-                <label>Telefone</label>
-                <input type="tel">
-            </div>
-            <div>
-                <label>Conhecimento em linguagens de programação</label>
-                <input type="checkbox">Python
-                <input type="checkbox">C#
-                <input type="checkbox">JavaScript
-                <input type="checkbox">Ruby
-                <input type="checkbox">SQL
-            </div>
-            <div>
-                <label>Cargo de Preferência</label>
-                <input type="radio" name="radio1">Back-end
-                <input type="radio" name="radio1">Front-end
-                <input type="radio" name="radio1">Full-stack
-            </div>
-            <div>
-                <label>Experiência</label>
-                <textarea rows="10" cols="20"> 
-                    Escreve aqui
-                </textarea>
-            </div>
-        </form>
+        </section>
     </body>
 </html>

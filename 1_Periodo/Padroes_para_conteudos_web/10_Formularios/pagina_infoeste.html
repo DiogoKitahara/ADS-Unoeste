@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <title>Infoeste</title>
+        <link rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+        <h1>Infoeste</h1>
+        <div class="formulario">
+            <h2>35º SEMANA DE COMPUTAÇÃO E INFORMÁTICA DA FIPP/UNOESTE (INFOESTE 2023)</h2>
+            <div class="Campo_inscricao Campo">
+                <form name="formulario_1">
+                    <div style="display: inline-block;">
+                        <label for="tname">Nome</label> <br>
+                        <input type="text" name="text_nome" placeholder="Digite seu nome aqui" size="30">
+                    </div>
+                    <div style="display: inline-block;">
+                        <label for="rsexo">Genero</label> <br>
+                        <input type="radio" name="radio_sexo"> Masculino
+                        <input type="radio" name="radio_sexo"> Feminino
+                        <input type="radio" name="radio_sexo"> Outro
+                    </div>
+                    <div>
+                        <label for="tcpf">CPF</label><br>
+                        <input type="text" name="text_cpf">
+                    </div>
+                    <div style="display: inline-block;">
+                        <label for="tcep">CEP</label><br>
+                        <input type="text" name="text_cep">
+                    </div>
+                    <div style="display: inline-block;">
+                        <label for="selestado">Estado</label><br>
+                        <select name="select_estado" id="">
+                            <option value="AC">AC</option>
+                            <option value="AL">AL</option>
+                            <option value="AM">AM</option>
+                            <option value="AP">AP</option>
+                            <option value="BA">BA</option>
+                            <option value="CE">CE</option>
+                            <option value="DF">DF</option>
+                            <option value="ES">ES</option>
+                            <option value="GO">GO</option>
+                            <option value="MA">MA</option>
+                            <option value="MG">MG</option>
+                            <option value="MS">MS</option>
+                            <option value="MT">MT</option>
+                            <option value="PA">PA</option>
+                            <option value="PB">PB</option>
+                            <option value="PE">PE</option>
+                            <option value="PI">PI</option>
+                            <option value="PO">PO</option>
+                            <option value="PR">PR</option>
+                            <option value="RJ">RJ</option>
+                            <option value="RN">RN</option>
+                            <option value="RO">RO</option>
+                            <option value="RR">RR</option>
+                            <option value="RS">RS</option>
+                            <option value="SC">SC</option>
+                            <option value="SE">SE</option>
+                        </select>
+                    </div>
+                    <div style="display: inline-block;">
+                        <label for="tcidade">Cidade</label><br>
+                        <input type="text" name="text_cidade">
+                    </div>
+                    <div>
+                        <label for="ttelefone">Telefone</label><br>
+                        <input type="text" name="text_telefone" pattern="\(\d{2}\)\s\d{5}-\d{4}" placeholder="(99)99999-9999">
+                    </div>
+                    <div style="display: inline-block;">
+                        <label for="eemail">E-mail</label><br>
+                        <input type="email" name="email">
+                    </div>
+                    <hr>
+                    <div>
+                        <button>Enviar Formulario</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

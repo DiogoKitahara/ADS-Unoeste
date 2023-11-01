@@ -4,45 +4,45 @@
     <head>
         <meta charset="utf-8">
         <title>Formulário</title>
-        <link rel="stylesheet" href="estilo1.css">
+        <link rel="stylesheet" href="estilo2.css">
     </head>
     <body>
         <section class="area-login">
             <div class="login">
                 <h1>Formulário</h1>
                 <hr>
-                <form>
+                <form method="get">
                     <div>
                         <label>Nome Completo</label>
                         <input type="text">
-                    </div>
-                    <div>
+                        <label>Telefone</label>
+                        <input type="tel">
                         <label>Email</label>
                         <input type="email">
                     </div>
                     <div>
-                        <label>Telefone</label>
-                        <input type="tel">
+                        <br><label>Selecione pelo menos 4 linguagens de programação</label> <br>
+                        <input type="checkbox">Python <br>
+                        <input type="checkbox">C <br>
+                        <input type="checkbox">C++ <br>
+                        <input type="checkbox">C# <br>
+                        <input type="checkbox">JavaScript <br>
+                        <input type="checkbox">Ruby <br>
+                        <input type="checkbox">SQL <br>
                     </div>
                     <div>
-                        <label>Conhecimento em linguagens de programação</label>
-                        <input type="checkbox">Python
-                        <input type="checkbox">C#
-                        <input type="checkbox">JavaScript
-                        <input type="checkbox">Ruby
-                        <input type="checkbox">SQL
-                    </div>
-                    <div>
-                        <label>Cargo de Preferência</label>
+                        <br><label>Cargo de Preferência</label> <br>
                         <input type="radio" name="radio1">Back-end
                         <input type="radio" name="radio1">Front-end
                         <input type="radio" name="radio1">Full-stack
                     </div>
                     <div>
-                        <label>Experiência</label>
-                        <textarea rows="10" cols="20"> 
-                            Escreve aqui
-                        </textarea>
+                        <br><label>Experiência</label>
+                        <br><textarea rows="10" cols="48"></textarea>
+                    </div>
+                    <div>
+                        <input style="width: 177px; height: 30px; color: red; font-weight: bold;" type="reset" name="botaoCancelar" value="Cancelar">
+                        <input style="width: 177px; height: 30px; color: green; font-weight: bold;" type="submit" name="botaoEnviar" value="Enviar">
                     </div>
                 </form>
             </div>

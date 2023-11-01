@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.area-login {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    background-color: gray;
+    border-radius: 0.5%;
+    align-items: center;
+    width: 80%;
+    height: 80%px;
+    padding: 35px;
+}
+
+.login form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login input {
+    margin-top: 10px;
+    border: none;
+    height: 20px;
+    outline: none;
+    border-radius: 4px;
+}
+
+h1 {
+    text-align: center;
+}
+
+label {
+    font-weight: bold;
+}

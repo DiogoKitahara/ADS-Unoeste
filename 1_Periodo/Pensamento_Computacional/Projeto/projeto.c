@@ -117,7 +117,7 @@ int main(void)
             		}
             		i++;
             	}
-            	// Se já existe esse paciente cadastrado
+            	// Se ja existe esse paciente cadastrado
             	if (achou == 1) {
             		printf("Procedimento ja cadastrado!\n");
             	}

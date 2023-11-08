@@ -7,7 +7,7 @@ int main(void)
     // Declarar variaveis
     int i, operacao, cadastro, vMed[TF], vPac[TF], vProc[TF], tlm = 0, tlp = 0, tlpr = 0, igual = 0, codigo, achou;
     char vMedico[TF][30], vPaciente[TF][30], vProcedimento[TF][30];
-    // Loop atÈ o usuario digitar o numero 5 - Finalizar
+    // Loop at√© o usuario digitar o numero 5 - Finalizar
     do
     {
         // Montar menu
@@ -38,13 +38,13 @@ int main(void)
             // Switch para o tipo de cadastro
             switch (cadastro)
             {
-            // 1 - MÈdico
+            // 1 - M√©dico
             case 1:
                 printf("Codigo do medico: ");
                 scanf("%d", &codigo);
                 i = 0;
                 achou = 0;
-                // Loop para comparar o vMed com todos os vMeds j· cadastrados
+                // Loop para comparar o vMed com todos os vMeds j√° cadastrados
                 while (i < tlm && achou == 0)
                 {
                     if (vMed[i] == codigo)
@@ -53,13 +53,13 @@ int main(void)
                     }
                     i++;
                 }
-                // Se j· existe esse mÈdico cadastrado
+                // Se j√° existe esse m√©dico cadastrado
                 if (achou == 1) {
                     printf("Medico ja cadastrado!\n");
                 }
-                // Sen„o
+                // Sen√£o
                 else {
-                    // Verificar se existe espaÁo suficiente para adicionar um mÈdico
+                    // Verificar se existe espa√ßo suficiente para adicionar um m√©dico
                     if (tlm < TF) {
                         vMed[tlm] = codigo;
                         printf("Nome do medico: ");
@@ -78,20 +78,20 @@ int main(void)
             	scanf("%d", &codigo);
             	i = 0;
             	achou = 0;
-            	// Loop para comparar o vPac com todos os vPacs j· cadastrados
+            	// Loop para comparar o vPac com todos os vPacs j√° cadastrados
             	while(i < tlp && achou == 0){
             		if (codigo == vPac[i]){
             			achou = 1;
             		}
             		i++;
             	}
-            	// Se j· existe esse paciente cadastrado
+            	// Se j√° existe esse paciente cadastrado
             	if (achou == 1) {
             		printf("Paciente ja cadastrado!\n");
             	}
             	// Senao
             	else {
-            		// Verificar se existe espaÁo suficiente para adicionar um paciente
+            		// Verificar se existe espa√ßo suficiente para adicionar um paciente
             		if (tlp < TF) {
             			vPac[tlp] = codigo;
             			printf("Nome do paciente: ");
@@ -110,7 +110,7 @@ int main(void)
             	scanf("%d", &codigo);
             	i = 0;
             	achou = 0;
-            	// Loop para comparar o vPac com todos os vPacs j· cadastrados
+            	// Loop para comparar o vPac com todos os vPacs j√° cadastrados
             	while(achou == 0 && i < tlpr){
             		if (codigo == vProc[i]) {
             			achou = 1;
@@ -123,28 +123,28 @@ int main(void)
             	}
             	// Senao
             	else {
-            		// Verificar se existe espaÁo suficiente para adicionar um paciente
-					if (tlpr < TF) {
-						vProc[tlpr] = codigo;
-						printf("Nome do procedimento: ");
-						scanf("%s", vProcedimento[tlpr]);
-						printf("Procedimento cadastrado com sucesso!\n");
-						tlpr++;
-					}
-					else {
-						printf("Numero maximo de procedimentos cadastrados!\n");
-					}
+            		// Verificar se existe espa√ßo suficiente para adicionar um paciente
+			if (tlpr < TF) {
+				vProc[tlpr] = codigo;
+				printf("Nome do procedimento: ");
+				scanf("%s", vProcedimento[tlpr]);
+				printf("Procedimento cadastrado com sucesso!\n");
+				tlpr++;
+			}
+			else {
+				printf("Numero maximo de procedimentos cadastrados!\n");
+			}
             	}
             	break;
             // 4 - Retornar
             }
-        // 2 - Exclus„o
+        // 2 - Exclus√£o
         case 2:
             break;
-        // 3 - LanÁamento
+        // 3 - Lan√ßamento
         case 3:
             break;
-        // 4 - RelatÛrio
+        // 4 - Relat√≥rio
         case 4:
             break;
         // 5 - Finalizar

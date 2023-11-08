@@ -59,7 +59,7 @@ int main(void)
                 }
                 // Senão
                 else {
-                    // Verificar se é possivel adicionar mais um medico
+                    // Verificar se existe espaço suficiente para adicionar um médico
                     if (tlm < TF) {
                         vMed[tlm] = codigo;
                         printf("Nome do medico: ");
@@ -71,7 +71,6 @@ int main(void)
                         printf("Numero maximo de medicos cadastrados atingido!\n");
                     }
                 }
-                // Se existe espaço suficiente para adicionar um médico
                 break;
                 // 2 - Pacientes
                 // 3 - Procedimentos

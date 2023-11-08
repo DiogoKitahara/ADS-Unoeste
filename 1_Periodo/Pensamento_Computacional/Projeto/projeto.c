@@ -5,17 +5,17 @@
 int main(void)
 {
     // Declarar variaveis
-    int i, operacao, cadastro, vMed[TF], tlm = 0, igual = 0, codigo, achou;
-    char vMedico[TF][30];
-    // Loop at√© o usuario digitar o numero 5 - Finalizar
+    int i, operacao, cadastro, vMed[TF], vPac[TF], vProc[TF], tlm = 0, tlp = 0, tlpr = 0, igual = 0, codigo, achou;
+    char vMedico[TF][30], vPaciente[TF][30], vProcedimento[TF][30];
+    // Loop atÈ o usuario digitar o numero 5 - Finalizar
     do
     {
         // Montar menu
         printf("-------------------------------------------\n");
         printf("1 - Cadastrar\n");
-        printf("2 - Exclus√£o\n");
-        printf("3 - Lan√ßamento\n");
-        printf("4 - Relat√≥rio\n");
+        printf("2 - Exclusao\n");
+        printf("3 - Lancamento\n");
+        printf("4 - Relatorio\n");
         printf("5 - Finalizar\n");
         printf("-------------------------------------------\n");
         printf("Escolha uma operacao: ");
@@ -38,13 +38,13 @@ int main(void)
             // Switch para o tipo de cadastro
             switch (cadastro)
             {
-            // 1 - M√©dico
+            // 1 - MÈdico
             case 1:
                 printf("Codigo do medico: ");
                 scanf("%d", &codigo);
                 i = 0;
                 achou = 0;
-                // Loop para comparar o vMed com todos os vMeds j√° cadastrados
+                // Loop para comparar o vMed com todos os vMeds j· cadastrados
                 while (i < tlm && achou == 0)
                 {
                     if (vMed[i] == codigo)
@@ -53,13 +53,13 @@ int main(void)
                     }
                     i++;
                 }
-                // Se j√° existe esse m√©dico cadastrado
+                // Se j· existe esse mÈdico cadastrado
                 if (achou == 1) {
                     printf("Medico ja cadastrado!\n");
                 }
-                // Sen√£o
+                // Sen„o
                 else {
-                    // Verificar se existe espa√ßo suficiente para adicionar um m√©dico
+                    // Verificar se existe espaÁo suficiente para adicionar um mÈdico
                     if (tlm < TF) {
                         vMed[tlm] = codigo;
                         printf("Nome do medico: ");
@@ -72,17 +72,79 @@ int main(void)
                     }
                 }
                 break;
-                // 2 - Pacientes
-                // 3 - Procedimentos
-                // 4 - Retornar
+            // 2 - Pacientes
+            case 2:
+            	printf("Codigo do paciente: ");
+            	scanf("%d", &codigo);
+            	i = 0;
+            	achou = 0;
+            	// Loop para comparar o vPac com todos os vPacs j· cadastrados
+            	while(i < tlp && achou == 0){
+            		if (codigo == vPac[i]){
+            			achou = 1;
+            		}
+            		i++;
+            	}
+            	// Se j· existe esse paciente cadastrado
+            	if (achou == 1) {
+            		printf("Paciente ja cadastrado!\n");
+            	}
+            	// Senao
+            	else {
+            		// Verificar se existe espaÁo suficiente para adicionar um paciente
+            		if (tlp < TF) {
+            			vPac[tlp] = codigo;
+            			printf("Nome do paciente: ");
+            			scanf("%s", vPaciente[tlp]);
+            			printf("Paciente cadastrado com sucesso!\n");
+            			tlp++;
+            		}
+            		else {
+            			printf("Numero maximo de pacientes cadastrados!\n");
+            		}
+            	}
+            	break;
+            // 3 - Procedimentos
+            case 3:
+            	printf("Codigo do procedimento: ");
+            	scanf("%d", &codigo);
+            	i = 0;
+            	achou = 0;
+            	// Loop para comparar o vPac com todos os vPacs j· cadastrados
+            	while(achou == 0 && i < tlpr){
+            		if (codigo == vProc[i]) {
+            			achou = 1;
+            		}
+            		i++;
+            	}
+            	// Se j· existe esse paciente cadastrado
+            	if (achou == 1) {
+            		printf("Procedimento ja cadastrado!\n");
+            	}
+            	// Senao
+            	else {
+            		// Verificar se existe espaÁo suficiente para adicionar um paciente
+					if (tlpr < TF) {
+						vProc[tlpr] = codigo;
+						printf("Nome do procedimento: ");
+						scanf("%s", vProcedimento[tlpr]);
+						printf("Procedimento cadastrado com sucesso!\n");
+						tlpr++;
+					}
+					else {
+						printf("Numero maximo de procedimentos cadastrados!\n");
+					}
+            	}
+            	break;
+            // 4 - Retornar
             }
-        // 2 - Exclus√£o
+        // 2 - Exclus„o
         case 2:
             break;
-        // 3 - Lan√ßamento
+        // 3 - LanÁamento
         case 3:
             break;
-        // 4 - Relat√≥rio
+        // 4 - RelatÛrio
         case 4:
             break;
         // 5 - Finalizar

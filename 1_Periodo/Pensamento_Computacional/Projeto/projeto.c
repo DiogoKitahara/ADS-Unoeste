@@ -26,6 +26,7 @@ int main(void)
         // 1 - Cadastro
         case 1:
             // Montar outro menu
+            do {
             printf("-------------------------------------------\n");
             printf("1 - Cadastro de medico\n");
             printf("2 - Cadastro de paciente\n");
@@ -124,20 +125,24 @@ int main(void)
             	// Senao
             	else {
             		// Verificar se existe espaço suficiente para adicionar um paciente
-			if (tlpr < TF) {
-				vProc[tlpr] = codigo;
-				printf("Nome do procedimento: ");
-				scanf("%s", vProcedimento[tlpr]);
-				printf("Procedimento cadastrado com sucesso!\n");
-				tlpr++;
-			}
-			else {
-				printf("Numero maximo de procedimentos cadastrados!\n");
-			}
+			        if (tlpr < TF) {
+				        vProc[tlpr] = codigo;
+				        printf("Nome do procedimento: ");
+				        scanf("%s", vProcedimento[tlpr]);
+				        printf("Procedimento cadastrado com sucesso!\n");
+				        tlpr++;
+			        }
+			        else {
+				        printf("Numero maximo de procedimentos cadastrados!\n");
+			        }
             	}
             	break;
-            // 4 - Retornar
+            case 4:
+                break;
+            default:
+                printf("Opcao invalida. Por favor, tente novamente!\n");
             }
+        }  while (cadastro != 4);
         // 2 - Exclusão
         case 2:
             break;
@@ -147,9 +152,10 @@ int main(void)
         // 4 - Relatório
         case 4:
             break;
-        // 5 - Finalizar
         case 5:
             break;
+        default:
+            printf("Opcao invalida. Por favor, tente novamente!\n");
         }
     } while (operacao != 5);
 }

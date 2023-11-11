@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var mes;
+        document.write("1 - Janeiro" + "</br>");
+        document.write("2 - Fevereiro" + "</br>");
+        document.write("3 - Março" + "</br>");
+        document.write("4 - Abril" + "</br>");
+        document.write("5 - Maio" + "</br>");
+        document.write("6 - Junho" + "</br>");
+        document.write("7 - Julho" + "</br>");
+        document.write("8 - Agosto" + "</br>");
+        document.write("9 - Setembro" + "</br>");
+        document.write("10 - Outubro" + "</br>");
+        document.write("11 - Novembro" + "</br>");
+        document.write("12 - Dezembro" + "</br>");
+        document.write("</br>");
+        mes = parseInt(prompt("Escolha um mês: "));
+        if (mes >= 1 && mes <= 6) {
+            document.write("O mês ", mes, " está no 1º semestre");
+        }
+        
+        else if (mes >= 7 && mes <= 12) {
+            document.write("O mês ", mes, " está no 2º semestre");
+        }
+
+        else {
+            document.write("Opção inválida");
+        }
+    </script>
+</body>
+</html>

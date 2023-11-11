@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var media, avaliacao1, avaliacao2, trabalho;
+        avaliacao1 = parseFloat(prompt("Nota da primeira avaliação: "));
+        avaliacao2 = parseFloat(prompt("Nota da segunda avaliação: "));
+        trabalho = parseFloat(prompt("Nota do trabalho: "));
+        media = (avaliacao1 * 7 + avaliacao2 * 7 + trabalho * 3) / 9;
+        document.write("A média do usuário é: ", media.toFixed(2));
+    </script>
+</body>
+</html>

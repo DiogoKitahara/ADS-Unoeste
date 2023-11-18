@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exame</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap">
+    <link rel="stylesheet" href="componentes.css">
+    <link rel="stylesheet" href="palheta.css">
+    <link rel="stylesheet" href="titulos.css">
+    <link rel="stylesheet" href="fonts/remixicon.css">
+    <link rel="stylesheet" href="agenda-paciente.css">
+</head>
+
+<body>
+
+
+    <header class="cabecalho fundo-branco">
+        <div class="conteudo-cabecalho">
+            <div class="conteudo-logo">
+                <img src="images/logo-med.png" alt="" class="logo logo-icone">
+
+                <img src="images/logo-tipograh.png" alt="" class="logo logo-texto ">
+            </div>
+
+            <a href="#" class="btn btn-sair fundo-roxo-500 texto-branco">Sair</a>
+        </div>
+    </header>
+    <div class="cover-agenda">
+        <img src="images/agendamento.jpg" class="imagem-principal" style="width: 100%;">
+    </div>
+    <div class="conteudo-principal">
+
+
+
+        <div class="conteudo-agendamento">
+            <h1>
+                Exames Disponíveis
+            </h1>
+            <br>
+            <label class="conteudo-filtro">
+                <input class="filtro" type="text" id="filtro" name="filtro" required="required" maxlength="30">
+                <i class="ri-search-line"></i>
+            </label>
+            <br><br>
+
+            <div class="conteudo-listagem">
+                <table class="agendamento">
+                    <tr>
+                        <td>
+                            &ensp;Exames
+                        </td>
+                        <td>
+                            &ensp;Preços
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Eletrocardiograma</td>
+                        <td>R$ 80,00 em até 12x sem juros</td>
+                        <td>
+                            <button class="btn fundo-roxo-500 texto-branco js-ver-detalhes">Ver detalhes</button>
+                        </td>
+                        <td>
+                            <button class="btn fundo-roxo-500 texto-branco js-cancelar">Agendar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Cardiologista</td>
+                        <td>R$199,90 em até 12x sem juros</td>
+                        <td>
+                            <button class="btn fundo-roxo-500 texto-branco js-ver-detalhes">Ver
+                                detalhes</button>
+                        </td>
+                        <td>
+                            <button class="btn fundo-roxo-500 texto-branco js-cancelar">Agendar</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>Dermatologista</td>
+                        <td>R$159,90 em até 12x sem juros</td>
+                        <td>
+                            <button class="btn fundo-roxo-500 texto-branco js-ver-detalhes">Ver detalhes</button>
+                        </td>
+                        <td>
+                            <button class="btn fundo-roxo-500 texto-branco js-cancelar">Agendar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Oftalmologista</td>
+                        <td>R$ 139,90 em até 12x sem juros</td>
+                        <td>
+                            <button class="btn fundo-roxo-500 texto-branco js-ver-detalhes">Ver detalhes</button>
+                        </td>
+                        <td>
+                            <button class="btn fundo-roxo-500 texto-branco js-cancelar">Agendar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Hemograma</td>
+                        <td>R$ 100,00 em até 12x sem juros</td>
+                        <td>
+                            <button class="btn fundo-roxo-500 texto-branco js-ver-detalhes">Ver detalhes</button>
+                        </td>
+                        <td>
+                            <button class="btn fundo-roxo-500 texto-branco js-cancelar">Agendar</button>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br><br>
+            <div class="conteudo-botao">
+                <button class="btn btn-lista fundo-roxo-500 texto-branco" type="submit">Ver Mais</button>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <footer class="rodape fundo-branco">
+
+        <div class="conteudo-rodape">
+            <div>
+
+                <img src="images/logo-tipograh.png" alt="" class="logo logo-texto">
+
+                <p>
+                    Cuidando de você hoje e sempre!
+                </p>
+                <p>
+                    Siga a gente:
+                </p>
+                <ul class="redes-sociais">
+                    <li>
+                        <i class="ri-whatsapp-line"></i>
+                    </li>
+                    <li>
+                        <i class="ri-instagram-line"></i>
+                    </li>
+                    <li>
+                        <i class="ri-facebook-circle-fill"></i>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="">
+                <p>
+                    Site seguro
+                    <i class="ri-lock-fill"></i>
+                </p>
+                <p class="margin-bottom-0">
+                    Formas de pagamento
+                </p>
+                <ul class="cartoes">
+                    <li>
+                        <img src="https://cdn.icon-icons.com/icons2/1186/PNG/512/1490135018-mastercard_82253.png"
+                            alt="">
+                    </li>
+                    <li>
+                        <img src="images/logo-visa.png" alt="">
+                    </li>
+                    <li>
+                        <img src="https://cdn.worldvectorlogo.com/logos/elo-1.svg" alt="">
+                    </li>
+                    <li>
+                        <img src="images/logo-hipercard.png" alt="">
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+
+    </footer>
+    <dialog id="modal_ver_detalhe">
+        <button type="button" class="fechar">fechar</button>
+    </dialog>
+    
+    <script src=" modal.js"></script>
+</body>
+
+</html>

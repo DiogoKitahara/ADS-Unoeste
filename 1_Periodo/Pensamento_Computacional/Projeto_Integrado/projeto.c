@@ -227,10 +227,24 @@ int main(void)
             break;
         // 4 - Relatório
         case 4:
+        	        	// Montar outro menu
+            printf("-------------------------------------------\n");
+            printf("1 - Relatorio de medicos\n");
+            printf("2 - Relatorio de pacientes\n");
+            printf("3 - Relatorio de procedimentos\n");
+            printf("4 - Relatorio de lancamentos\n");
+            printf("5 - Retornar\n");
+            printf("-------------------------------------------\n");
+            printf("Escolha uma opcao: ");
+            scanf("%d", &exclusao);
+            printf("-------------------------------------------\n");
             break;
         // 5 - Finalizar
         case 5:
             break;
+        }
+        default:
+            printf("Opcao invalida. Por favor, tente novamente!\n");
         }
     } while (operacao != 5);
 }

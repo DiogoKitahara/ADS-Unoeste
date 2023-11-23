@@ -5,7 +5,7 @@
 int main(void)
 {
     // Declarar variaveis
-    int i, operacao, cadastro, vMed[TF], tlm = 0, tlpp = 0, igual = 0, codigo, achou,tlp=0, vPac[TF],tlproc=0,vProc[TF], exclusao,j, lancamento;
+    int i, k, operacao, cadastro, vMed[TF], vMedHist[TF], tlm = 0, tlpp = 0, igual = 0, codigo, achou,tlp=0, vPac[TF], vPacHist[TF], tlproc=0,vProc[TF], vProcHist[TF], exclusao,j, lancamento, tlmh = 0, tlph = 0, tlproch = 0,nao_apagar = 0;
     char vMedico[TF][30],vPaciente[TF][30], vProcedimento[TF][30], vData[TF][10];
     // Loop até o usuario digitar o numero 5 - Finalizar
     do
@@ -163,12 +163,25 @@ int main(void)
 					printf("Codigo do medico: ");
             		scanf("%d",&codigo);
             		i=0;
+					k=0;
+					nao_apagar=0;
             		// Procurar o codigo do medico
            			while(vMed[i] != codigo && i<tlm)
            			{
            				i++;
-           			}	
-           			if(i<tlm) //achou
+           			}
+					while (k < tlmh) {
+						if (vMedHist[k] == codigo) {
+							printf("O médico só poderá ser excluído se este nao estiver em nenhum lancamento!\n");
+							nao_apagar = 1;
+						}
+						k++;
+					}
+					if (nao_apagar == 1) {
+						break;
+					}
+					// Se encontrou
+           			if(i<tlm)
             		{
 						printf("Medico exluido com sucesso!\n");
             			for(j=i;j<tlm;j++)
@@ -177,20 +190,29 @@ int main(void)
            					strcpy(vMedico[j],vMedico[j+1]);
            				}
            				tlm--;
-           			}
-           			else
-						printf("Medico nao cadastrado!\n");
-					break;	
-							
+           			}		
+					break;
 				case 2:
 					printf("Codigo do paciente: ");
             	 	scanf("%d",&codigo);
             		i=0;
+					k=0;
+					nao_apagar=0;
            			// Procurar o codigo do paciente
            			while(vPac[i] != codigo && i<tlp)
            			{
            				i++;
            			}	
+					while (k < tlph) {
+						if (vPacHist[k] == codigo) {
+							printf("O paciente só poderá ser excluído se este nao estiver em nenhum lancamento!\n");
+							nao_apagar = 1;
+						}
+						k++;
+					}
+					if (nao_apagar == 1) {
+						break;
+					}
 					// Se encontrou
             		if(i<tlp)
             		{
@@ -202,16 +224,26 @@ int main(void)
            				}
            				tlp--;	
            			}
-           			else
-						printf("Paciente nao cadastrado!\n");
 					break;
 				case 3:
 					printf("Codigo do procedimento: ");
 					scanf("%d", &codigo);
-					i = 0;
+					i=0;
+					k=0;
+					nao_apagar=0;
 					// Procurar o codigo do procedimento
 					while (i < tlproc && vProc[i] != codigo) {
 						i++;
+					}
+					while (k < tlproch) {
+						if (vProcHist[k] == codigo) {
+							printf("O procedimento só poderá ser excluído se este nao estiver em nenhum lancamento!\n");
+							nao_apagar = 1;
+						}
+						k++;
+					}
+					if (nao_apagar == 1) {
+						break;
 					}
 					// Se encontrou 
 					if (i < tlproc) {
@@ -221,9 +253,6 @@ int main(void)
 							strcpy(vProcedimento[j], vProcedimento[j+1]);
 						}
 						tlproc--;
-					}
-					else {
-						printf("Procedimento nao cadastrado!\n");
 					}
 					break;
 				// Retornar
@@ -251,6 +280,10 @@ int main(void)
 				printf("Nao foi possivel realizar o lancamento pois este medico nao esta cadastrado!\n");
 				break;
 			}
+			if (achou == 1) {
+				vMedHist[tlmh] = codigo;
+				tlmh++;
+			}
 			printf("Codigo do paciente: ");
 			scanf("%d", &codigo);
 			i = 0;
@@ -265,6 +298,10 @@ int main(void)
 				printf("Nao foi possivel realizar o lancamento pois este paciente nao esta cadastrado!\n");
 				break;
 			}
+			if (achou == 2) {
+				vPacHist[tlph] = codigo;
+				tlph++;
+			}
 			printf("Codigo do procedimento: ");
 			scanf("%d", &codigo);
 			i = 0;
@@ -278,6 +315,10 @@ int main(void)
 				if (achou == 2) {
 				printf("Nao foi possivel realizar o lancamento pois este procedimento nao esta cadastrado!\n");
 				break;
+			}
+			if (achou == 3) {
+				vProcHist[tlproch] = codigo;
+				tlproch++;
 			}
 			// Adicionar data de lancamento
 			if (tlpp < TF) {

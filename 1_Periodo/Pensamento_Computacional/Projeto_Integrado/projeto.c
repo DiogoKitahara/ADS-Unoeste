@@ -5,8 +5,8 @@
 int main(void)
 {
     // Declarar variaveis
-    int i, operacao, cadastro, vMed[TF], tlm = 0, igual = 0, codigo, achou,tlp=0, vPac[TF],tlproc=0,vProc[TF], exclusao,j;
-    char vMedico[TF][30],vPaciente[TF][30], vProcedimento[TF][30];
+    int i, operacao, cadastro, vMed[TF], tlm = 0, tlpp = 0, igual = 0, codigo, achou,tlp=0, vPac[TF],tlproc=0,vProc[TF], exclusao,j, lancamento;
+    char vMedico[TF][30],vPaciente[TF][30], vProcedimento[TF][30], vData[TF][10];
     // Loop até o usuario digitar o numero 5 - Finalizar
     do
     {
@@ -95,7 +95,7 @@ int main(void)
 					if(tlp < TF)
 					{
 						vPac[tlp] = codigo;
-						printf("\nNome do paciente: ");
+						printf("Nome do paciente: ");
 						fflush(stdin);
 						scanf("%s",&vPaciente[tlp]);
 						printf("Paciente cadastrado com sucesso!\n");
@@ -127,7 +127,7 @@ int main(void)
 					if(tlproc < TF)
 					{
 						vProc[tlproc] = codigo;
-						printf("\nNome do procedimento: ");
+						printf("Nome do procedimento: ");
 						fflush(stdin);
 						scanf("%s",&vProcedimento[tlproc]);
 						printf("Procedimento cadastrado com sucesso!\n");
@@ -136,13 +136,14 @@ int main(void)
 					else
 					printf("Numero maximo de procedimentos cadastrados atingido!\n");
 					break;
-				
                 // 4 - Retornar
                 case 4:
                 	break;
-                default:
-                	printf("Opcao invalida. Por favor, tente novamente!\n");
-            }
+				// Mensagem caso seja digitado uma opcao invalida
+				default:
+					printf("Opcao invalida. Por favor, tente novamente!\n");
+        	}
+		break;
         // 2 - Exclusão
         case 2: 
         	// Montar outro menu
@@ -169,6 +170,7 @@ int main(void)
            			}	
            			if(i<tlm) //achou
             		{
+						printf("Medico exluido com sucesso!\n");
             			for(j=i;j<tlm;j++)
             			{			
            					vMed[j] = vMed[j+1];
@@ -189,14 +191,16 @@ int main(void)
            			{
            				i++;
            			}	
-            		if(i<tlp) //achou
+					// Se encontrou
+            		if(i<tlp)
             		{
+						printf("Paciente exluido com sucesso!\n");
             			for(j=i;j<tlp;j++)
             			{			
            					vPac[j] = vPac[j+1];
            					strcpy(vPaciente[j],vPaciente[j+1]);
            				}
-           				tlm--;	
+           				tlp--;	
            			}
            			else
 						printf("Paciente nao cadastrado!\n");
@@ -211,6 +215,7 @@ int main(void)
 					}
 					// Se encontrou 
 					if (i < tlproc) {
+						printf("Procedimento exluido com sucesso!\n");
 						for (j = i; j < tlproc; j++) {
 							vProc[j] = vProc[j + 1];
 							strcpy(vProcedimento[j], vProcedimento[j+1]);
@@ -221,13 +226,73 @@ int main(void)
 						printf("Procedimento nao cadastrado!\n");
 					}
 					break;
+				// Retornar
+				case 4:
+					break;
+				// Mensagem caso seja digitado uma opcao invalida
+				default:
+					printf("Opcao invalida. Por favor, tente novamente!\n");
             }
+		break;
         // 3 - Lançamento
         case 3:
+			printf("Codigo do medico: ");
+			scanf("%d", &codigo);
+			i = 0;
+			achou = 0;
+			// Verificar se existe o medico
+			while (i < tlm && achou == 0) {
+				if (vMed[i] == codigo) {
+					achou++;
+				}
+				i++;
+			}
+			if (achou == 0) {
+				printf("Nao foi possivel realizar o lancamento pois este medico nao esta cadastrado!\n");
+				break;
+			}
+			printf("Codigo do paciente: ");
+			scanf("%d", &codigo);
+			i = 0;
+			// Verificar se existe o paciente
+			while (i < tlp && achou == 1) {
+				if (vPac[i] == codigo) {
+					achou++;
+				}
+				i++;
+			}
+				if (achou == 1) {
+				printf("Nao foi possivel realizar o lancamento pois este paciente nao esta cadastrado!\n");
+				break;
+			}
+			printf("Codigo do procedimento: ");
+			scanf("%d", &codigo);
+			i = 0;
+			// Verificar se existe o procedimento
+			while (i < tlproc && achou == 2) {
+				if (vProc[i] == codigo) {
+					achou++;
+				}
+				i++;
+			}
+				if (achou == 2) {
+				printf("Nao foi possivel realizar o lancamento pois este procedimento nao esta cadastrado!\n");
+				break;
+			}
+			// Adicionar data de lancamento
+			if (tlpp < TF) {
+				printf("Data do lancamento [dd/mm/aaaa]: ");
+				scanf("%s", vData[tlpp]);
+				printf("Data do lancamento cadastrado com sucesso!\n");
+				tlpp++;
+			}
+			else {
+				printf("Numero maximo de lancamentos cadastrados atingido!\n");
+			}
             break;
         // 4 - Relatório
         case 4:
-        	        	// Montar outro menu
+        	// Montar outro menu
             printf("-------------------------------------------\n");
             printf("1 - Relatorio de medicos\n");
             printf("2 - Relatorio de pacientes\n");
@@ -236,13 +301,64 @@ int main(void)
             printf("5 - Retornar\n");
             printf("-------------------------------------------\n");
             printf("Escolha uma opcao: ");
-            scanf("%d", &exclusao);
+            scanf("%d", &lancamento);
             printf("-------------------------------------------\n");
+			switch(lancamento) {
+				case 1: 
+					if (tlm > 0) {
+						printf("Medicos cadastrados:\n");
+						for (i = 0; i < tlm; i++) {
+							printf("%d - Nome: %s | Codigo: %d\n", i + 1, vMedico[i], vMed[i]);
+						}
+					}
+					else {
+						printf("Nenhum medico cadastrado!\n");
+					}
+					break;
+				case 2: 
+					if (tlp > 0) {
+						printf("Pacientes cadastrados:\n");
+						for (i = 0; i < tlp; i++) {
+							printf("%d - Nome: %s | Codigo: %d\n", i + 1, vPaciente[i], vPac[i]);
+						}
+					}
+					else {
+						printf("Nenhum paciente cadastrado!\n");
+					}
+					break;
+				case 3: 
+					if (tlproc > 0) {
+						printf("Procedimentos cadastrados:\n");
+						for (i = 0; i < tlproc; i++) {
+							printf("%d - Nome: %s | Codigo: %d\n", i + 1, vProcedimento[i], vProc[i]);
+						}
+					}
+					else {
+						printf("Nenhum procedimento cadastrado!\n");
+					}
+					break;
+				case 4: 
+					if (tlpp > 0) {
+						printf("Lancamentos cadastrados:\n");
+						for (i = 0; i < tlpp; i++) {
+							printf("%d - Data: %s\n", i + 1, vData[i]);
+						}
+					}
+					else {
+						printf("Nenhum lancamento cadastrado!\n");
+					}
+					break;
+				// Retornar
+				case 5:
+					break;
+				// Mensagem caso seja digitado uma opcao invalida
+				default:
+					printf("Opcao invalida. Por favor, tente novamente!\n");
+			}
             break;
         // 5 - Finalizar
         case 5:
             break;
-        }
         default:
             printf("Opcao invalida. Por favor, tente novamente!\n");
         }

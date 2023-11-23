@@ -6,7 +6,7 @@ int main(void)
 {
     // Declarar variaveis
     int i, k, operacao, cadastro, vMed[TF], vMedHist[TF], tlm = 0, tlpp = 0, igual = 0, codigo, achou,tlp=0, vPac[TF], vPacHist[TF], tlproc=0,vProc[TF], vProcHist[TF], exclusao,j, lancamento, tlmh = 0, tlph = 0, tlproch = 0,nao_apagar = 0;
-    char vMedico[TF][30],vPaciente[TF][30], vProcedimento[TF][30], vData[TF][10];
+    char vMedico[TF][30],vPaciente[TF][30], vProcedimento[TF][30], vData[TF][10], data[10];
     // Loop até o usuario digitar o numero 5 - Finalizar
     do
     {
@@ -151,7 +151,8 @@ int main(void)
             printf("1 - Excluir medico\n");
             printf("2 - Excluir paciente\n");
             printf("3 - Excluir procedimento\n");
-            printf("4 - Retornar\n");
+            printf("4 - Excluir lancamento\n");
+			printf("5 - Retornar\n");
             printf("-------------------------------------------\n");
             printf("Escolha uma opcao: ");
             scanf("%d", &exclusao);
@@ -257,6 +258,26 @@ int main(void)
 					break;
 				// Retornar
 				case 4:
+					printf("Data do lancamento: ");
+					scanf("%s", &data);
+					i = 0;
+					// Procurar pelo lancamento
+					while (strcmp(vData[i], data) == 1 && i < tlpp) {
+						i++;
+					}
+					// Se encontrou
+					if (i < tlpp) {
+						printf("Lancamento excluido com sucesso!\n");
+						for(j = i; j < tlpp; j++) {
+							vMedHist[j] = vMedHist[j + 1];
+							vPacHist[j] = vPacHist[j + 1];
+							vProcHist[j] = vProcHist[j + 1];
+							strcpy(vData[j], vData[j + 1]);
+						}
+						tlpp--;
+					}
+					break;
+				case 5: 
 					break;
 				// Mensagem caso seja digitado uma opcao invalida
 				default:

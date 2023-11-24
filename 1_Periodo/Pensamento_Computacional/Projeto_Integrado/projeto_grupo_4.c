@@ -63,7 +63,8 @@ int main(void)
                     if (tlm < TF) {
                         vMed[tlm] = codigo;
                         printf("Nome do medico: ");
-                        scanf("%s", vMedico[tlm]);
+						fflush(stdin);
+                        gets(vMedico[tlm]);
                         printf("Medico cadastrado com sucesso!\n");
                         tlm++;
                     }
@@ -97,7 +98,7 @@ int main(void)
 						vPac[tlp] = codigo;
 						printf("Nome do paciente: ");
 						fflush(stdin);
-						scanf("%s",&vPaciente[tlp]);
+						gets(vPaciente[tlp]);
 						printf("Paciente cadastrado com sucesso!\n");
 						tlp++;
 					}		
@@ -129,7 +130,7 @@ int main(void)
 						vProc[tlproc] = codigo;
 						printf("Nome do procedimento: ");
 						fflush(stdin);
-						scanf("%s",&vProcedimento[tlproc]);
+						gets(vProcedimento[tlproc]);
 						printf("Procedimento cadastrado com sucesso!\n");
 						tlproc++;
 					}		
@@ -259,7 +260,8 @@ int main(void)
 				// Retornar
 				case 4:
 					printf("Data do lancamento: ");
-					scanf("%s", &data);
+					fflush(stdin);
+					gets(data);
 					i = 0;
 					// Procurar pelo lancamento
 					while (strcmp(vData[i], data) == 1 && i < tlpp) {
@@ -344,7 +346,8 @@ int main(void)
 			// Adicionar data de lancamento
 			if (tlpp < TF) {
 				printf("Data do lancamento [dd/mm/aaaa]: ");
-				scanf("%s", vData[tlpp]);
+				fflush(stdin);
+				gets(vData[tlpp]);
 				printf("Data do lancamento cadastrado com sucesso!\n");
 				tlpp++;
 			}
